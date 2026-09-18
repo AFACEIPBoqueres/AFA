@@ -41,7 +41,6 @@ window.noticias = [
         // de la web, puedes poner por ejemplo:
         //
         // enlace: "#extraescolares"
-    }
     
 
 ];
