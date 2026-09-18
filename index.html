@@ -7,7 +7,7 @@
 <title>AFA CEIP Boqueres | Asociación de Familias del Alumnado</title>
 
 <meta name="description"
-content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos, eventos, extraescolares y contacto.">
+      content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos, eventos, extraescolares y contacto.">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -22,87 +22,156 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
 
         <div class="logo">
             <img src="img/logo-afa.png" alt="Logo AFA">
-            <span>AFA CEIP BOQUERES</span>
+            <span data-i18n="logo">AFA CEIP BOQUERES</span>
         </div>
 
         <nav>
             <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#afa">¿Qué es el AFA?</a></li>
-                <li><a href="#ventajas">Ventajas</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#extraescolares">Extraescolares</a></li>
-                <li><a href="#camisetas">Camisetas</a></li>
-                <li><a href="#socio">Hazte Socio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+
+                <li>
+                    <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#afa" data-i18n="nav.afa">¿Qué es el AFA?</a>
+                </li>
+
+                <li>
+                    <a href="#ventajas" data-i18n="nav.ventajas">Ventajas</a>
+                </li>
+
+                <li>
+                    <a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a>
+                </li>
+
+                <li>
+                    <a href="#galeria" data-i18n="nav.galeria">Galería</a>
+                </li>
+
+                <li>
+                    <a href="#extraescolares" data-i18n="nav.extraescolares">
+                        Extraescolares
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#camisetas" data-i18n="nav.camisetas">
+                        Camisetas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#socio" data-i18n="nav.socio">
+                        Hazte Socio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto" data-i18n="nav.contacto">
+                        Contacto
+                    </a>
+                </li>
+
             </ul>
         </nav>
+
         <!-- Selector de idioma -->
 
         <div class="language-selector">
-        
+
             <!-- Castellano -->
-        
-            <a href="index.html" title="Castellano">
+
+            <a href="#" 
+               data-lang="es"
+               title="Castellano"
+               aria-label="Castellano">
+
                 <img
                     src="img/es.png"
                     alt="Castellano"
                     class="active-lang">
             </a>
-        
+
             <!-- Valenciano -->
-        
-            <a href="val/index.html" title="Valencià">
+
+            <a href="#"
+               data-lang="val"
+               title="Valencià"
+               aria-label="Valencià">
+
                 <img
                     src="img/valencia.png"
                     alt="Valencià">
             </a>
-        
+
         </div>
+
     </div>
 
 </header>
+
+
+<!-- =========================
+     INICIO
+========================= -->
 
 <section id="inicio" class="hero">
 
     <div class="hero-overlay">
 
-        <h1>AFA CEIP BOQUERES</h1>
+        <h1 data-i18n="hero.titulo">
+            AFA CEIP BOQUERES
+        </h1>
 
-        <p>
+        <p data-i18n="hero.descripcion">
             Construyendo juntos una mejor experiencia educativa
             para nuestros hijos e hijas.
         </p>
 
         <div class="hero-buttons">
-            <a href="#socio" class="btn">Hazte Socio</a>
-            <a href="#contacto" class="btn btn-secondary">Contactar</a>
+
+            <a href="#socio"
+               class="btn"
+               data-i18n="hero.botonSocio">
+                Hazte Socio
+            </a>
+
+            <a href="#contacto"
+               class="btn btn-secondary"
+               data-i18n="hero.botonContacto">
+                Contactar
+            </a>
+
         </div>
 
     </div>
 
 </section>
 
+
+<!-- =========================
+     ¿QUÉ ES EL AFA?
+========================= -->
+
 <section id="afa" class="section">
 
     <div class="container">
 
-        <h2>¿Qué es el AFA?</h2>
+        <h2 data-i18n="afa.titulo">
+            ¿Qué es el AFA?
+        </h2>
 
-        <p>
+        <p data-i18n="afa.parrafo1">
             La Asociación de Familias del Alumnado del CEIP Boqueres
             está formada por madres, padres y tutores comprometidos
-            con la mejora del centro educativo y el bienestar del 
-            alumnado. Además, el AFA CEIP Boqueres forma parte de 
-            FAMPA Castelló Penyagolosa (Federación de Asociaciones de 
+            con la mejora del centro educativo y el bienestar del
+            alumnado. Además, el AFA CEIP Boqueres forma parte de
+            FAMPA Castelló Penyagolosa (Federación de Asociaciones de
             Padres y Madres de Alumnos de la provincia de Castellón).
         </p>
-        <p>
 
-        </p>
-        <p>   
-            Trabajamos junto al centro educativo para crear un entorno 
+        <p data-i18n="afa.parrafo2">
+            Trabajamos junto al centro educativo para crear un entorno
             más participativo, creativo y alegre.
         </p>
 
@@ -110,32 +179,72 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
 
 </section>
 
+
+<!-- =========================
+     VENTAJAS
+========================= -->
+
 <section id="ventajas" class="section bg-light">
 
     <div class="container">
 
-        <h2>Ventajas de ser socio</h2>
+        <h2 data-i18n="ventajas.titulo">
+            Ventajas de ser socio
+        </h2>
 
         <div class="cards">
 
             <div class="card">
-                <h3>Participación</h3>
-                <p>Participa activamente en la vida escolar.</p>
+
+                <h3 data-i18n="ventajas.participacion.titulo">
+                    Participación
+                </h3>
+
+                <p data-i18n="ventajas.participacion.texto">
+                    Participa activamente en la vida escolar.
+                </p>
+
             </div>
 
-            <div class="card">
-                <h3>Descuentos</h3>
-                <p>Actividades, cine y comercios colaboradores. (“L’oroneta”, “Babel”, “Laser Combat”, “Lo quiero bonito”, “Meraki by Carmi”.)</p>
-            </div>
 
             <div class="card">
-                <h3>Prioridad</h3>
-                <p>Inscripción preferente en eventos y talleres.</p>
+
+                <h3 data-i18n="ventajas.descuentos.titulo">
+                    Descuentos
+                </h3>
+
+                <p data-i18n="ventajas.descuentos.texto">
+                    Actividades, cine y comercios colaboradores.
+                    (“L’oroneta”, “Babel”, “Laser Combat”,
+                    “Lo quiero bonito”, “Meraki by Carmi”.)
+                </p>
+
             </div>
 
+
             <div class="card">
-                <h3>Representación</h3>
-                <p>Defendemos los intereses de las familias.</p>
+
+                <h3 data-i18n="ventajas.prioridad.titulo">
+                    Prioridad
+                </h3>
+
+                <p data-i18n="ventajas.prioridad.texto">
+                    Inscripción preferente en eventos y talleres.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3 data-i18n="ventajas.representacion.titulo">
+                    Representación
+                </h3>
+
+                <p data-i18n="ventajas.representacion.texto">
+                    Defendemos los intereses de las familias.
+                </p>
+
             </div>
 
         </div>
@@ -143,44 +252,97 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
     </div>
 
 </section>
---
 
---
+
+<!-- =========================
+     PROYECTOS
+========================= -->
+
 <section id="proyectos" class="section">
 
     <div class="container">
 
-        <h2>Proyectos y Logros</h2>
+        <h2 data-i18n="proyectos.titulo">
+            Proyectos y Logros
+        </h2>
 
         <div class="container">
-            <div> <!-- Este div interno junta el título y la lista en un solo bloque -->
-                <p>Desde el AFA se organiza:</p>
-                <p>- Actividades extraescolares - Eventos y celebraciones - Proyectos y charlas - Colaboraciones-</p>
+
+            <div>
+
+                <p data-i18n="proyectos.intro">
+                    Desde el AFA se organiza:
+                </p>
+
+                <p data-i18n="proyectos.actividades">
+                    - Actividades extraescolares
+                    - Eventos y celebraciones
+                    - Proyectos y charlas
+                    - Colaboraciones -
+                </p>
+
             </div>
+
         </div>
+
 
         <div class="cards">
 
             <div class="card">
-                <h3>Eventos</h3>
+
+                <h3 data-i18n="proyectos.eventos.titulo">
+                    Eventos
+                </h3>
 
                 <ul>
-                    <li>Halloween</li>
-                    <li>Navidad</li>
-                    <li>Reyes Magos</li>
-                    <li>Carnaval</li>
-                    <li>Fin de Curso</li>
+
+                    <li data-i18n="proyectos.eventos.halloween">
+                        Halloween
+                    </li>
+
+                    <li data-i18n="proyectos.eventos.navidad">
+                        Navidad
+                    </li>
+
+                    <li data-i18n="proyectos.eventos.reyes">
+                        Reyes Magos
+                    </li>
+
+                    <li data-i18n="proyectos.eventos.carnaval">
+                        Carnaval
+                    </li>
+
+                    <li data-i18n="proyectos.eventos.finCurso">
+                        Fin de Curso
+                    </li>
+
                 </ul>
+
             </div>
 
+
             <div class="card">
-                <h3>Mejoras</h3>
+
+                <h3 data-i18n="proyectos.mejoras.titulo">
+                    Mejoras
+                </h3>
 
                 <ul>
-                    <li>Restauración de bancos</li>
-                    <li>Instalación de pérgola</li>
-                    <li>Charlas para familias</li>
+
+                    <li data-i18n="proyectos.mejoras.bancos">
+                        Restauración de bancos
+                    </li>
+
+                    <li data-i18n="proyectos.mejoras.pergola">
+                        Instalación de pérgola
+                    </li>
+
+                    <li data-i18n="proyectos.mejoras.charlas">
+                        Charlas para familias
+                    </li>
+
                 </ul>
+
             </div>
 
         </div>
@@ -188,29 +350,77 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
     </div>
 
 </section>
+
+
+<!-- =========================
+     GALERÍA
+========================= -->
 
 <section id="galeria" class="section bg-light">
 
     <div class="container">
 
-        <h2>Galería</h2>
+        <h2 data-i18n="galeria.titulo">
+            Galería
+        </h2>
 
         <div class="gallery">
 
-            <img src="img/0halloween.jpg" alt="">
-            <img src="img/0navidad2.jpg" alt="">
-            <img src="img/0navidad3.jpg" alt="">
-            <img src="img/0navidad.jpg" alt="">
-            <img src="img/0reyesmagos1.jpg" alt="">
-            <img src="img/0reyesmagos2.jpg" alt="">
-            <img src="img/0carnaval.jpg" alt="">
-            <img src="img/0carrozapregon1.jpg" alt="">
-            <img src="img/0carrozapregon2.jpg" alt="">
-            <img src="img/0fiestafindecurso1.jpg" alt="">
-            <img src="img/0fiestafindecurso2.jpg" alt="">
-            <img src="img/0bancos1.jpg" alt="">
-            <img src="img/0bancos2.jpg" alt="">
-            <img src="img/0pergola.jpg" alt="">
+            <img src="img/0halloween.jpg"
+                 alt="Halloween"
+                 data-i18n-alt="galeria.halloween">
+
+            <img src="img/0navidad2.jpg"
+                 alt="Navidad"
+                 data-i18n-alt="galeria.navidad">
+
+            <img src="img/0navidad3.jpg"
+                 alt="Navidad"
+                 data-i18n-alt="galeria.navidad">
+
+            <img src="img/0navidad.jpg"
+                 alt="Navidad"
+                 data-i18n-alt="galeria.navidad">
+
+            <img src="img/0reyesmagos1.jpg"
+                 alt="Reyes Magos"
+                 data-i18n-alt="galeria.reyes">
+
+            <img src="img/0reyesmagos2.jpg"
+                 alt="Reyes Magos"
+                 data-i18n-alt="galeria.reyes">
+
+            <img src="img/0carnaval.jpg"
+                 alt="Carnaval"
+                 data-i18n-alt="galeria.carnaval">
+
+            <img src="img/0carrozapregon1.jpg"
+                 alt="Carroza del Pregón"
+                 data-i18n-alt="galeria.carroza">
+
+            <img src="img/0carrozapregon2.jpg"
+                 alt="Carroza del Pregón"
+                 data-i18n-alt="galeria.carroza">
+
+            <img src="img/0fiestafindecurso1.jpg"
+                 alt="Fiesta Fin de Curso"
+                 data-i18n-alt="galeria.finCurso">
+
+            <img src="img/0fiestafindecurso2.jpg"
+                 alt="Fiesta Fin de Curso"
+                 data-i18n-alt="galeria.finCurso">
+
+            <img src="img/0bancos1.jpg"
+                 alt="Bancos del patio"
+                 data-i18n-alt="galeria.bancos">
+
+            <img src="img/0bancos2.jpg"
+                 alt="Bancos del patio"
+                 data-i18n-alt="galeria.bancos">
+
+            <img src="img/0pergola.jpg"
+                 alt="Pérgola"
+                 data-i18n-alt="galeria.pergola">
 
         </div>
 
@@ -218,51 +428,105 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
 
 </section>
 
-<section id="extraescolares" class="section">
 
-    <div class="section bg-light">
+<!-- =========================
+     EXTRAESCOLARES
+========================= -->
+
+<section id="extraescolares" class="section bg-light">
+
+    <div class="container">
+
+        <h2 data-i18n="extraescolares.titulo">
+            Extraescolares
+        </h2>
+
+        <p data-i18n="extraescolares.descripcion">
+            Cada curso actualizamos la oferta de actividades
+            extraescolares en función de la demanda de las familias.
+        </p>
+
+
+        <!-- Visor del PDF -->
+
+        <div class="pdf-completo-seccion">
+
+            <iframe
+                src="pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf"
+                class="visor-pdf"
+                title="Actividades extraescolares">
+            </iframe>
+
+        </div>
+
+
+        <!-- Botón de descarga -->
+
         <div class="container">
-    
-            <h2>Extraescolares</h2>
-    
-            <p>
-                Cada curso actualizamos la oferta de actividades extraescolares en función de la demanda de las familias.
-            </p>
-        
-            <!-- Sección de la imagen a pantalla completa -->
-            <div class="pdf-completo-seccion">
-                <!-- El visor del PDF -->
-                <iframe src="pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf" class="visor-pdf"></iframe>
-            </div>
-    
-            <div class="container">
-                 <!-- Botón de descarga -->
-                <a href="pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf" download="afa_extraescolares_2026-2027_VAL.pdf" class="btn-descarga-pdf">
-                    Descargar PDF
-                </a>
-            </div>    
+
+            <a
+                href="pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf"
+                download="afa_extraescolares_2026-2027_VAL.pdf"
+                class="btn-descarga-pdf"
+                data-i18n="extraescolares.descargar">
+                Descargar PDF
+            </a>
+
         </div>
-    
-            <div class="cards">
-    
-                <div class="card">Teatro</div>
-                <div class="card">Baile Moderno</div>
-                <div class="card">Gimnasia Rítmica</div>
-                <div class="card">Multideporte</div>
-                <div class="card">Pelota Valenciana</div>
-                <div class="card">Inglés Vivencial</div>
-    
+
+
+        <div class="cards">
+
+            <div class="card"
+                 data-i18n="extraescolares.teatro">
+                Teatro
             </div>
+
+            <div class="card"
+                 data-i18n="extraescolares.baile">
+                Baile Moderno
+            </div>
+
+            <div class="card"
+                 data-i18n="extraescolares.ritmica">
+                Gimnasia Rítmica
+            </div>
+
+            <div class="card"
+                 data-i18n="extraescolares.multideporte">
+                Multideporte
+            </div>
+
+            <div class="card"
+                 data-i18n="extraescolares.pelota">
+                Pelota Valenciana
+            </div>
+
+            <div class="card"
+                 data-i18n="extraescolares.ingles">
+                Inglés Vivencial
+            </div>
+
+        </div>
+
     </div>
+
 </section>
+
+
+<!-- =========================
+     CAMISETAS
+========================= -->
 
 <section id="camisetas" class="section bg-light">
 
     <div class="container">
 
-        <h2>Camisetas AFA</h2>
+        <h2 data-i18n="camisetas.titulo">
+            Camisetas AFA
+        </h2>
 
-        <p>
+        <p data-i18n="camisetas.descripcion">
             Cada inicio de curso se realiza un pedido conjunto
             de camisetas oficiales del colegio.
         </p>
@@ -271,30 +535,51 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
 
 </section>
 
+
+<!-- =========================
+     HAZTE SOCIO
+========================= -->
+
 <section id="socio" class="section socio">
 
     <div class="container">
 
-        <h2>Hazte Socio</h2>
+        <h2 data-i18n="socio.titulo">
+            Hazte Socio
+        </h2>
 
-        <p>Cuota anual: 22€</p>
+        <p data-i18n="socio.cuota">
+            Cuota anual: 22€
+        </p>
 
-        <p>
+        <p data-i18n="socio.descripcion">
             Participa en la vida del colegio y disfruta
             de todas las ventajas del AFA.
         </p>
 
-        <p>
-            ¡Ser socio o socia del AFA es muy fácil! Existen varias formas
-            para apuntarse:
-                <ul>
-                    <li>Inscribirse a través de la aplicación ”Ábaco Familias”.</li>
-                    <li>Acudir en persona a la oficina del AFA (viernes de 9:00h a 10:00h).</li>
-                </ul>
+        <p data-i18n="socio.formasIntro">
+            ¡Ser socio o socia del AFA es muy fácil!
+            Existen varias formas para apuntarse:
         </p>
 
+        <ul>
 
-        <a href="#contacto" class="btn">
+            <li data-i18n="socio.abaco">
+                Inscribirse a través de la aplicación
+                ”Ábaco Familias”.
+            </li>
+
+            <li data-i18n="socio.presencial">
+                Acudir en persona a la oficina del AFA
+                (viernes de 9:00h a 10:00h).
+            </li>
+
+        </ul>
+
+
+        <a href="#contacto"
+           class="btn"
+           data-i18n="socio.boton">
             Solicitar Información
         </a>
 
@@ -302,33 +587,58 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
 
 </section>
 
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
 <section id="contacto" class="section">
 
     <div class="container">
 
-        <h2>Contacto</h2>
+        <h2 data-i18n="contacto.titulo">
+            Contacto
+        </h2>
 
         <div class="contact-grid">
 
             <div>
-                <h3>Información</h3>
+
+                <h3 data-i18n="contacto.informacion">
+                    Información
+                </h3>
 
                 <p>📞 633 714 580</p>
 
                 <p>✉️ afaceipboqueres@gmail.com</p>
 
-                <p>🕒 Viernes de 09:00 a 10:00</p>
+                <p data-i18n="contacto.horario">
+                    🕒 Viernes de 09:00 a 10:00
+                </p>
+
             </div>
+
 
             <form class="contact-form">
 
-                <input type="text" placeholder="Nombre">
+                <input
+                    type="text"
+                    data-i18n-placeholder="contacto.nombre"
+                    placeholder="Nombre">
 
-                <input type="email" placeholder="Email">
+                <input
+                    type="email"
+                    data-i18n-placeholder="contacto.email"
+                    placeholder="Email">
 
-                <textarea rows="5" placeholder="Mensaje"></textarea>
+                <textarea
+                    rows="5"
+                    data-i18n-placeholder="contacto.mensaje"
+                    placeholder="Mensaje"></textarea>
 
-                <button type="submit">
+                <button
+                    type="submit"
+                    data-i18n="contacto.enviar">
                     Enviar
                 </button>
 
@@ -340,28 +650,42 @@ content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos,
 
 </section>
 
+
+<!-- =========================
+     MAPA
+========================= -->
+
 <section class="map">
 
-<iframe
-src="https://maps.google.com/maps?q=CEIP%20BOQUERES&t=&z=15&ie=UTF8&iwloc=&output=embed"
-allowfullscreen>
-</iframe>
+    <iframe
+        src="https://maps.google.com/maps?q=CEIP%20BOQUERES&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen
+        title="Ubicación CEIP Boqueres">
+    </iframe>
 
 </section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
     <div class="container">
 
-        <p>© 2026 AFA CEIP Boqueres</p>
+        <p data-i18n="footer.copyright">
+            © 2026 AFA CEIP Boqueres
+        </p>
 
-        <p>
+        <p data-i18n="footer.descripcion">
             Asociación de Familias del Alumnado
         </p>
 
     </div>
 
 </footer>
+
 
 <script src="js/main.js"></script>
 
