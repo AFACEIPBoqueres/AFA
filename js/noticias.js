@@ -15,31 +15,23 @@ window.noticias = [
     
     {
         fecha: "2026-09-21",
-
-        // true = aparece como noticia destacada
-        // false = noticia normal
         destacada: true,
 
-        // Ruta de la imagen
-        imagen: "img/noticias/noticia_web.jpg",
-
-        // Categoría
         categoria: {
-            es: "Información",
-            val: "Informació"
+            es: "AFA",
+            val: "AFA"
         },
 
-        // Texto en castellano
         es: {
-            titulo: "¡Tenemos Web del AFA!",
-            texto: "Por primera vez hemos creado una web propia del AFA. En esta web mantendremos actualizada toda la información relacionada con AFA y la vida en el colegio."
+            titulo: "¡Ya tenemos web!",
+            texto: "El AFA CEIP Boqueres estrena su nueva página web. Un nuevo espacio creado para mantener informadas a las familias, compartir nuestras actividades y proyectos, y facilitar el contacto con el AFA."
         },
 
-        // Texto en valenciano
         val: {
-            titulo: "Tenim Web de l'AFA!",
-            texto: "Per primera vegada hem creat una web pròpia del *AFA. En esta web mantindrem actualitzada tota la informació relacionada amb *AFA i la vida en el col·legi."
+            titulo: "Ja tenim web!",
+            texto: "L'AFA CEIP Boqueres estrena la seua nova pàgina web. Un nou espai creat per a mantindre informades les famílies, compartir les nostres activitats i projectes, i facilitar el contacte amb l'AFA."
         }
+    }
 
         // Opcional:
         // Si quieres que al pulsar la noticia vaya a una sección
