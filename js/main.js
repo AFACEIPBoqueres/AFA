@@ -1,7 +1,25 @@
 /* =========================================================
-   AFA CEIP BOQUERES
-   Sistema de idiomas + navegación suave
+   AFA CEIP BOQUERES - VERSIÓN 2.0
+   JavaScript principal
 ========================================================= */
+
+
+/* =========================================================
+   CONFIGURACIÓN
+========================================================= */
+
+const siteConfig = {
+
+    email: "afaceipboqueres@gmail.com",
+
+    phone: "+34633714580",
+
+    pdfs: {
+        es: "pdf/actividades_extraescolares_afa_2026-2027_ES.pdf",
+        val: "pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf"
+    }
+
+};
 
 
 /* =========================================================
@@ -12,487 +30,363 @@ const translations = {
 
     es: {
 
-        /* NAV */
+        /* Navegación */
+        navInicio: "Inicio",
+        navActualidad: "Actualidad",
+        navAfa: "¿Qué es el AFA?",
+        navEventos: "Eventos",
+        navExtraescolares: "Extraescolares",
+        navGaleria: "Galería",
+        navCamisetas: "Camisetas",
+        navDescuentos: "Descuentos",
+        navSocio: "Hazte socio",
+        navContacto: "Contacto",
 
-        "logo": "AFA CEIP BOQUERES",
+        /* Hero */
+        heroBadge: "AFA CEIP Boqueres",
+        heroTitle: "Juntos hacemos comunidad",
+        heroDescription:
+            "Trabajamos para mejorar la experiencia escolar de nuestros hijos e hijas y crear una comunidad educativa más participativa.",
+        heroNewsButton: "Ver actualidad",
+        heroActivitiesButton: "Extraescolares",
+        heroMemberButton: "Hazte socio",
 
-        "nav.inicio": "Inicio",
-        "nav.afa": "¿Qué es el AFA?",
-        "nav.ventajas": "Ventajas",
-        "nav.proyectos": "Proyectos",
-        "nav.galeria": "Galería",
-        "nav.extraescolares": "Extraescolares",
-        "nav.camisetas": "Camisetas",
-        "nav.socio": "Hazte Socio",
-        "nav.contacto": "Contacto",
-
-
-        /* HERO */
-
-        "hero.titulo": "AFA CEIP BOQUERES",
-
-        "hero.descripcion":
-            "Construyendo juntos una mejor experiencia educativa para nuestros hijos e hijas.",
-
-        "hero.botonSocio": "Hazte Socio",
-
-        "hero.botonContacto": "Contactar",
-
+        /* Actualidad */
+        newsKicker: "Actualidad",
+        newsTitle: "Noticias y novedades",
+        newsIntro:
+            "Aquí encontrarás las últimas noticias, avisos y novedades del AFA.",
+        newsMore: "Ver todas las noticias",
+        newsEmptyTitle: "Todavía no hay novedades publicadas",
+        newsEmptyText:
+            "Pronto encontrarás aquí las últimas noticias y avisos del AFA.",
+        newsFeatured: "Destacada",
+        newsReadMore: "Leer más",
+        newsBack: "Volver a Actualidad",
 
         /* AFA */
+        afaKicker: "Nuestra asociación",
+        afaTitle: "¿Qué es el AFA?",
+        afaText1:
+            "El AFA CEIP Boqueres está formado por madres, padres y representantes legales del alumnado que colaboramos para mejorar la vida escolar y fortalecer la relación entre las familias, el centro educativo y la comunidad.",
+        afaText2:
+            "Formamos parte de FAMPA Castelló Penyagolosa y trabajamos para representar los intereses de las familias, organizar actividades, colaborar con el colegio y crear espacios de participación.",
+        afaCardTitle:
+            "Una asociación para todas las familias",
+        afaCardText:
+            "Tu participación ayuda a construir una comunidad educativa más cercana, participativa y activa.",
+        afaCardButton: "Quiero participar →",
 
-        "afa.titulo": "¿Qué es el AFA?",
+        /* Eventos */
+        eventsKicker: "Actividades",
+        eventsTitle: "Eventos",
+        eventsIntro:
+            "Consulta las próximas actividades y celebraciones organizadas por el AFA.",
+        eventsEmptyTitle: "No hay eventos publicados todavía",
+        eventsEmptyText:
+            "Cuando tengamos una nueva actividad, aparecerá aquí.",
+        eventsMore: "Más información",
+        eventNoDate: "Próximamente",
 
-        "afa.parrafo1":
-            "La Asociación de Familias del Alumnado del CEIP Boqueres está formada por madres, padres y tutores comprometidos con la mejora del centro educativo y el bienestar del alumnado. Además, el AFA CEIP Boqueres forma parte de FAMPA Castelló Penyagolosa (Federación de Asociaciones de Padres y Madres de Alumnos de la provincia de Castellón).",
-
-        "afa.parrafo2":
-            "Trabajamos junto al centro educativo para crear un entorno más participativo, creativo y alegre.",
-
-
-        /* VENTAJAS */
-
-        "ventajas.titulo":
-            "Ventajas de ser socio",
-
-        "ventajas.participacion.titulo":
-            "Participación",
-
-        "ventajas.participacion.texto":
-            "Participa activamente en la vida escolar.",
-
-        "ventajas.descuentos.titulo":
-            "Descuentos",
-
-        "ventajas.descuentos.texto":
-            "Actividades, cine y comercios colaboradores. (“L’oroneta”, “Babel”, “Laser Combat”, “Lo quiero bonito”, “Meraki by Carmi”.)",
-
-        "ventajas.prioridad.titulo":
-            "Prioridad",
-
-        "ventajas.prioridad.texto":
-            "Inscripción preferente en eventos y talleres.",
-
-        "ventajas.representacion.titulo":
-            "Representación",
-
-        "ventajas.representacion.texto":
-            "Defendemos los intereses de las familias.",
-
-
-        /* PROYECTOS */
-
-        "proyectos.titulo":
-            "Proyectos y Logros",
-
-        "proyectos.intro":
-            "Desde el AFA se organiza:",
-
-        "proyectos.actividades":
-            "- Actividades extraescolares - Eventos y celebraciones - Proyectos y charlas - Colaboraciones -",
-
-        "proyectos.eventos.titulo":
-            "Eventos",
-
-        "proyectos.eventos.halloween":
-            "Halloween",
-
-        "proyectos.eventos.navidad":
-            "Navidad",
-
-        "proyectos.eventos.reyes":
-            "Reyes Magos",
-
-        "proyectos.eventos.carnaval":
-            "Carnaval",
-
-        "proyectos.eventos.finCurso":
-            "Fin de Curso",
-
-        "proyectos.mejoras.titulo":
-            "Mejoras",
-
-        "proyectos.mejoras.bancos":
-            "Restauración de bancos",
-
-        "proyectos.mejoras.pergola":
-            "Instalación de pérgola",
-
-        "proyectos.mejoras.charlas":
-            "Charlas para familias",
-
-
-        /* GALERÍA */
-
-        "galeria.titulo":
-            "Galería",
-
-        "galeria.halloween":
-            "Halloween",
-
-        "galeria.navidad":
-            "Navidad",
-
-        "galeria.reyes":
-            "Reyes Magos",
-
-        "galeria.carnaval":
-            "Carnaval",
-
-        "galeria.carroza":
-            "Carroza del Pregón",
-
-        "galeria.finCurso":
-            "Fiesta Fin de Curso",
-
-        "galeria.bancos":
-            "Bancos del patio",
-
-        "galeria.pergola":
-            "Pérgola",
-
-
-        /* EXTRAESCOLARES */
-
-        "extraescolares.titulo":
-            "Extraescolares",
-
-        "extraescolares.descripcion":
-            "Cada curso actualizamos la oferta de actividades extraescolares en función de la demanda de las familias.",
-
-        "extraescolares.descargar":
+        /* Extraescolares */
+        extraKicker: "Curso 2026-2027",
+        extraTitle: "Extraescolares",
+        extraIntro:
+            "Consulta todas las actividades extraescolares disponibles para este curso.",
+        extraPdfTitle:
+            "Información de extraescolares",
+        extraPdfDescription:
+            "Puedes consultar el documento completo o descargarlo para tenerlo siempre a mano.",
+        extraPdfDownload:
             "Descargar PDF",
 
-        "extraescolares.teatro":
-            "Teatro",
+        activityTeatro: "Teatro",
+        activityTeatroText:
+            "Actividad para desarrollar la expresión, creatividad y confianza.",
 
-        "extraescolares.baile":
-            "Baile Moderno",
+        activityBaile: "Baile Moderno",
+        activityBaileText:
+            "Música, movimiento y diversión.",
 
-        "extraescolares.ritmica":
-            "Gimnasia Rítmica",
+        activityGimnasia: "Gimnasia Rítmica",
+        activityGimnasiaText:
+            "Coordinación, movimiento y actividad física.",
 
-        "extraescolares.multideporte":
-            "Multideporte",
+        activityMultideporte: "Multideporte",
+        activityMultideporteText:
+            "Diferentes deportes para aprender jugando.",
 
-        "extraescolares.pelota":
-            "Pelota Valenciana",
+        activityPelota: "Pelota Valenciana",
+        activityPelotaText:
+            "Descubre y practica un deporte tradicional de nuestra tierra.",
 
-        "extraescolares.ingles":
-            "Inglés Vivencial",
+        activityIngles: "Inglés Vivencial",
+        activityInglesText:
+            "Aprendizaje del inglés mediante actividades prácticas y dinámicas.",
 
+        /* Galería */
+        galleryKicker: "Nuestro día a día",
+        galleryTitle: "Galería",
+        galleryIntro:
+            "Algunos momentos de las actividades y celebraciones compartidas por nuestra comunidad educativa.",
 
-        /* CAMISETAS */
-
-        "camisetas.titulo":
-            "Camisetas AFA",
-
-        "camisetas.descripcion":
+        /* Camisetas */
+        shirtsKicker: "Identidad del cole",
+        shirtsTitle: "Camisetas",
+        shirtsHeading:
+            "Camisetas oficiales del colegio",
+        shirtsText:
             "Cada inicio de curso se realiza un pedido conjunto de camisetas oficiales del colegio.",
+        shirtsMore:
+            "Cuando se abra el periodo de pedido, publicaremos toda la información en esta web y en nuestros canales habituales.",
 
+        /* Descuentos */
+        discountKicker: "Ventajas",
+        discountTitle: "Descuentos para socios",
+        discountIntro:
+            "Las familias socias pueden disfrutar de descuentos y ventajas ofrecidas por diferentes establecimientos colaboradores.",
+        discountButton:
+            "Hazte socio y disfruta de las ventajas",
 
-        /* SOCIOS */
+        /* Socios */
+        memberKicker: "Participa",
+        memberTitle: "Hazte socio del AFA",
+        memberPrice: "por familia y curso",
+        memberText:
+            "Formar parte del AFA permite colaborar en las actividades del colegio, participar en propuestas para las familias y disfrutar de las ventajas disponibles para socios.",
+        memberOption1Title:
+            "Ábaco Familias",
+        memberOption1Text:
+            "Puedes realizar el alta a través de la plataforma Ábaco Familias.",
+        memberOption2Title:
+            "En el colegio",
+        memberOption2Text:
+            "También puedes acercarte a nuestra oficina los viernes de 09:00 a 10:00.",
+        memberButton:
+            "Quiero hacerme socio",
 
-        "socio.titulo":
-            "Hazte Socio",
+        /* Contacto */
+        contactKicker: "Estamos aquí",
+        contactTitle: "Contacto",
+        contactIntro:
+            "Si tienes alguna duda, propuesta o necesitas información, puedes contactar con nosotros.",
 
-        "socio.cuota":
-            "Cuota anual: 22€",
+        contactPhoneTitle: "Teléfono",
+        contactEmailTitle: "Correo electrónico",
+        contactHoursTitle: "Horario de atención",
+        contactHours: "Viernes de 09:00 a 10:00",
 
-        "socio.descripcion":
-            "Participa en la vida del colegio y disfruta de todas las ventajas del AFA.",
+        formName: "Nombre",
+        formNamePlaceholder: "Tu nombre",
+        formEmail: "Email",
+        formEmailPlaceholder: "tu@email.com",
+        formMessage: "Mensaje",
+        formMessagePlaceholder:
+            "Escribe tu mensaje...",
+        formSubmit: "Enviar mensaje",
 
-        "socio.formasIntro":
-            "¡Ser socio o socia del AFA es muy fácil! Existen varias formas para apuntarse:",
+        formSuccess:
+            "Se abrirá tu aplicación de correo para enviar el mensaje.",
+        formError:
+            "Por favor, completa todos los campos.",
 
-        "socio.abaco":
-            "Inscribirse a través de la aplicación ”Ábaco Familias”.",
+        /* Footer */
+        footerText:
+            "Asociación de Familias del Alumnado",
+        footerHome: "Inicio",
+        footerMember: "Hazte socio",
+        footerContact: "Contacto",
 
-        "socio.presencial":
-            "Acudir en persona a la oficina del AFA (viernes de 9:00h a 10:00h).",
+        /* Menú */
+        menuOpen: "Abrir menú",
+        menuClose: "Cerrar menú",
 
-        "socio.boton":
-            "Solicitar Información",
-
-
-        /* CONTACTO */
-
-        "contacto.titulo":
-            "Contacto",
-
-        "contacto.informacion":
-            "Información",
-
-        "contacto.horario":
-            "🕒 Viernes de 09:00 a 10:00",
-
-        "contacto.nombre":
-            "Nombre",
-
-        "contacto.email":
-            "Email",
-
-        "contacto.mensaje":
-            "Mensaje",
-
-        "contacto.enviar":
-            "Enviar",
-
-
-        /* FOOTER */
-
-        "footer.copyright":
-            "© 2026 AFA CEIP Boqueres",
-
-        "footer.descripcion":
-            "Asociación de Familias del Alumnado"
+        /* Galería */
+        galleryClose: "Cerrar imagen"
 
     },
 
 
     /* =====================================================
        VALENCIÀ
-    ===================================================== */
+    ====================================================== */
 
     val: {
 
-        /* NAV */
+        /* Navegación */
+        navInicio: "Inici",
+        navActualidad: "Actualitat",
+        navAfa: "Què és l'AFA?",
+        navEventos: "Esdeveniments",
+        navExtraescolares: "Extraescolars",
+        navGaleria: "Galeria",
+        navCamisetas: "Samarretes",
+        navDescuentos: "Descomptes",
+        navSocio: "Fes-te soci",
+        navContacto: "Contacte",
 
-        "logo": "AFA CEIP BOQUERES",
+        /* Hero */
+        heroBadge: "AFA CEIP Boqueres",
+        heroTitle: "Junts fem comunitat",
+        heroDescription:
+            "Treballem per millorar l'experiència escolar dels nostres fills i filles i crear una comunitat educativa més participativa.",
+        heroNewsButton: "Veure actualitat",
+        heroActivitiesButton: "Extraescolars",
+        heroMemberButton: "Fes-te soci",
 
-        "nav.inicio": "Inici",
-        "nav.afa": "Què és l'AFA?",
-        "nav.ventajas": "Avantatges",
-        "nav.proyectos": "Projectes",
-        "nav.galeria": "Galeria",
-        "nav.extraescolares": "Extraescolars",
-        "nav.camisetas": "Samarretes",
-        "nav.socio": "Fes-te soci",
-        "nav.contacto": "Contacte",
-
-
-        /* HERO */
-
-        "hero.titulo": "AFA CEIP BOQUERES",
-
-        "hero.descripcion":
-            "Construïm junts una millor experiència educativa per als nostres fills i filles.",
-
-        "hero.botonSocio":
-            "Fes-te soci",
-
-        "hero.botonContacto":
-            "Contactar",
-
+        /* Actualidad */
+        newsKicker: "Actualitat",
+        newsTitle: "Notícies i novetats",
+        newsIntro:
+            "Ací trobaràs les últimes notícies, avisos i novetats de l'AFA.",
+        newsMore: "Veure totes les notícies",
+        newsEmptyTitle: "Encara no hi ha novetats publicades",
+        newsEmptyText:
+            "Prompte trobaràs ací les últimes notícies i avisos de l'AFA.",
+        newsFeatured: "Destacada",
+        newsReadMore: "Llegir més",
+        newsBack: "Tornar a Actualitat",
 
         /* AFA */
+        afaKicker: "La nostra associació",
+        afaTitle: "Què és l'AFA?",
+        afaText1:
+            "L'AFA CEIP Boqueres està formada per mares, pares i representants legals de l'alumnat que col·laborem per millorar la vida escolar i reforçar la relació entre les famílies, el centre educatiu i la comunitat.",
+        afaText2:
+            "Formem part de FAMPA Castelló Penyagolosa i treballem per representar els interessos de les famílies, organitzar activitats, col·laborar amb el col·legi i crear espais de participació.",
+        afaCardTitle:
+            "Una associació per a totes les famílies",
+        afaCardText:
+            "La teua participació ajuda a construir una comunitat educativa més pròxima, participativa i activa.",
+        afaCardButton: "Vull participar →",
 
-        "afa.titulo":
-            "Què és l'AFA?",
+        /* Eventos */
+        eventsKicker: "Activitats",
+        eventsTitle: "Esdeveniments",
+        eventsIntro:
+            "Consulta les pròximes activitats i celebracions organitzades per l'AFA.",
+        eventsEmptyTitle:
+            "Encara no hi ha esdeveniments publicats",
+        eventsEmptyText:
+            "Quan tinguem una nova activitat, apareixerà ací.",
+        eventsMore: "Més informació",
+        eventNoDate: "Pròximament",
 
-        "afa.parrafo1":
-            "L'Associació de Famílies de l'Alumnat del CEIP Boqueres està formada per mares, pares i tutors compromesos amb la millora del centre educatiu i el benestar de l'alumnat. A més, l'AFA CEIP Boqueres forma part de FAMPA Castelló Penyagolosa (Federació d'Associacions de Pares i Mares d'Alumnes de la província de Castelló).",
-
-        "afa.parrafo2":
-            "Treballem junt amb el centre educatiu per crear un entorn més participatiu, creatiu i alegre.",
-
-
-        /* AVANTATGES */
-
-        "ventajas.titulo":
-            "Avantatges de ser soci",
-
-        "ventajas.participacion.titulo":
-            "Participació",
-
-        "ventajas.participacion.texto":
-            "Participa activament en la vida escolar.",
-
-        "ventajas.descuentos.titulo":
-            "Descomptes",
-
-        "ventajas.descuentos.texto":
-            "Activitats, cinema i comerços col·laboradors. (“L’oroneta”, “Babel”, “Laser Combat”, “Lo quiero bonito”, “Meraki by Carmi”.)",
-
-        "ventajas.prioridad.titulo":
-            "Prioritat",
-
-        "ventajas.prioridad.texto":
-            "Inscripció preferent en esdeveniments i tallers.",
-
-        "ventajas.representacion.titulo":
-            "Representació",
-
-        "ventajas.representacion.texto":
-            "Defensem els interessos de les famílies.",
-
-
-        /* PROJECTES */
-
-        "proyectos.titulo":
-            "Projectes i assoliments",
-
-        "proyectos.intro":
-            "Des de l'AFA s'organitza:",
-
-        "proyectos.actividades":
-            "- Activitats extraescolars - Esdeveniments i celebracions - Projectes i xarrades - Col·laboracions -",
-
-        "proyectos.eventos.titulo":
-            "Esdeveniments",
-
-        "proyectos.eventos.halloween":
-            "Halloween",
-
-        "proyectos.eventos.navidad":
-            "Nadal",
-
-        "proyectos.eventos.reyes":
-            "Reis Mags",
-
-        "proyectos.eventos.carnaval":
-            "Carnestoltes",
-
-        "proyectos.eventos.finCurso":
-            "Fi de Curs",
-
-        "proyectos.mejoras.titulo":
-            "Millores",
-
-        "proyectos.mejoras.bancos":
-            "Restauració de bancs",
-
-        "proyectos.mejoras.pergola":
-            "Instal·lació de pèrgola",
-
-        "proyectos.mejoras.charlas":
-            "Xarrades per a famílies",
-
-
-        /* GALERIA */
-
-        "galeria.titulo":
-            "Galeria",
-
-        "galeria.halloween":
-            "Halloween",
-
-        "galeria.navidad":
-            "Nadal",
-
-        "galeria.reyes":
-            "Reis Mags",
-
-        "galeria.carnaval":
-            "Carnestoltes",
-
-        "galeria.carroza":
-            "Carrossa del Pregó",
-
-        "galeria.finCurso":
-            "Festa de Fi de Curs",
-
-        "galeria.bancos":
-            "Bancs del pati",
-
-        "galeria.pergola":
-            "Pèrgola",
-
-
-        /* EXTRAESCOLARS */
-
-        "extraescolares.titulo":
-            "Extraescolars",
-
-        "extraescolares.descripcion":
-            "Cada curs actualitzem l'oferta d'activitats extraescolars en funció de la demanda de les famílies.",
-
-        "extraescolares.descargar":
+        /* Extraescolares */
+        extraKicker: "Curs 2026-2027",
+        extraTitle: "Extraescolars",
+        extraIntro:
+            "Consulta totes les activitats extraescolars disponibles per a aquest curs.",
+        extraPdfTitle:
+            "Informació d'extraescolars",
+        extraPdfDescription:
+            "Pots consultar el document complet o descarregar-lo per a tindre'l sempre a mà.",
+        extraPdfDownload:
             "Descarregar PDF",
 
-        "extraescolares.teatro":
-            "Teatre",
+        activityTeatro: "Teatre",
+        activityTeatroText:
+            "Activitat per desenvolupar l'expressió, la creativitat i la confiança.",
 
-        "extraescolares.baile":
-            "Ball Modern",
+        activityBaile: "Ball Modern",
+        activityBaileText:
+            "Música, moviment i diversió.",
 
-        "extraescolares.ritmica":
-            "Gimnàstica Rítmica",
+        activityGimnasia: "Gimnàstica Rítmica",
+        activityGimnasiaText:
+            "Coordinació, moviment i activitat física.",
 
-        "extraescolares.multideporte":
-            "Multiesport",
+        activityMultideporte: "Multiesport",
+        activityMultideporteText:
+            "Diferents esports per aprendre jugant.",
 
-        "extraescolares.pelota":
-            "Pilota Valenciana",
+        activityPelota: "Pilota Valenciana",
+        activityPelotaText:
+            "Descobreix i practica un esport tradicional de la nostra terra.",
 
-        "extraescolares.ingles":
-            "Anglés Vivencial",
+        activityIngles: "Anglés Vivencial",
+        activityInglesText:
+            "Aprenentatge de l'anglés mitjançant activitats pràctiques i dinàmiques.",
 
+        /* Galería */
+        galleryKicker: "El nostre dia a dia",
+        galleryTitle: "Galeria",
+        galleryIntro:
+            "Alguns moments de les activitats i celebracions compartides per la nostra comunitat educativa.",
 
-        /* SAMARRETES */
-
-        "camisetas.titulo":
-            "Samarretes AFA",
-
-        "camisetas.descripcion":
+        /* Camisetas */
+        shirtsKicker: "Identitat del centre",
+        shirtsTitle: "Samarretes",
+        shirtsHeading:
+            "Samarretes oficials del col·legi",
+        shirtsText:
             "Cada inici de curs es realitza una comanda conjunta de samarretes oficials del col·legi.",
+        shirtsMore:
+            "Quan s'òbriga el període de comanda, publicarem tota la informació en aquesta web i en els nostres canals habituals.",
 
+        /* Descuentos */
+        discountKicker: "Avantatges",
+        discountTitle: "Descomptes per a socis",
+        discountIntro:
+            "Les famílies sòcies poden gaudir de descomptes i avantatges oferits per diferents establiments col·laboradors.",
+        discountButton:
+            "Fes-te soci i gaudeix dels avantatges",
 
-        /* SOCIS */
+        /* Socios */
+        memberKicker: "Participa",
+        memberTitle: "Fes-te soci de l'AFA",
+        memberPrice: "per família i curs",
+        memberText:
+            "Formar part de l'AFA permet col·laborar en les activitats del col·legi, participar en propostes per a les famílies i gaudir dels avantatges disponibles per als socis.",
+        memberOption1Title:
+            "Ábaco Familias",
+        memberOption1Text:
+            "Pots realitzar l'alta a través de la plataforma Ábaco Familias.",
+        memberOption2Title:
+            "Al col·legi",
+        memberOption2Text:
+            "També pots acostar-te a la nostra oficina els divendres de 09:00 a 10:00.",
+        memberButton:
+            "Vull fer-me soci",
 
-        "socio.titulo":
-            "Fes-te soci",
+        /* Contacto */
+        contactKicker: "Estem ací",
+        contactTitle: "Contacte",
+        contactIntro:
+            "Si tens algun dubte, proposta o necessites informació, pots contactar amb nosaltres.",
 
-        "socio.cuota":
-            "Quota anual: 22€",
+        contactPhoneTitle: "Telèfon",
+        contactEmailTitle: "Correu electrònic",
+        contactHoursTitle: "Horari d'atenció",
+        contactHours: "Divendres de 09:00 a 10:00",
 
-        "socio.descripcion":
-            "Participa en la vida del col·legi i gaudeix de tots els avantatges de l'AFA.",
+        formName: "Nom",
+        formNamePlaceholder: "El teu nom",
+        formEmail: "Email",
+        formEmailPlaceholder: "el-teu@email.com",
+        formMessage: "Missatge",
+        formMessagePlaceholder:
+            "Escriu el teu missatge...",
+        formSubmit: "Enviar missatge",
 
-        "socio.formasIntro":
-            "Ser soci o sòcia de l'AFA és molt fàcil! Hi ha diverses maneres d'apuntar-se:",
+        formSuccess:
+            "S'obrirà la teua aplicació de correu per enviar el missatge.",
+        formError:
+            "Per favor, completa tots els camps.",
 
-        "socio.abaco":
-            "Inscriure's a través de l'aplicació ”Ábaco Familias”.",
+        /* Footer */
+        footerText:
+            "Associació de Famílies de l'Alumnat",
+        footerHome: "Inici",
+        footerMember: "Fes-te soci",
+        footerContact: "Contacte",
 
-        "socio.presencial":
-            "Acudir en persona a l'oficina de l'AFA (divendres de 9:00 h a 10:00 h).",
+        /* Menú */
+        menuOpen: "Obrir menú",
+        menuClose: "Tancar menú",
 
-        "socio.boton":
-            "Sol·licitar informació",
-
-
-        /* CONTACTE */
-
-        "contacto.titulo":
-            "Contacte",
-
-        "contacto.informacion":
-            "Informació",
-
-        "contacto.horario":
-            "🕒 Divendres de 09:00 a 10:00",
-
-        "contacto.nombre":
-            "Nom",
-
-        "contacto.email":
-            "Correu electrònic",
-
-        "contacto.mensaje":
-            "Missatge",
-
-        "contacto.enviar":
-            "Enviar",
-
-
-        /* FOOTER */
-
-        "footer.copyright":
-            "© 2026 AFA CEIP Boqueres",
-
-        "footer.descripcion":
-            "Associació de Famílies de l'Alumnat"
+        /* Galería */
+        galleryClose: "Tancar imatge"
 
     }
 
@@ -500,7 +394,14 @@ const translations = {
 
 
 /* =========================================================
-   CAMBIO DE IDIOMA
+   IDIOMA ACTUAL
+========================================================= */
+
+let idiomaActual = "es";
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
 ========================================================= */
 
 function cambiarIdioma(idioma) {
@@ -509,168 +410,1155 @@ function cambiarIdioma(idioma) {
         idioma = "es";
     }
 
-    /* Cambiar idioma del documento */
+    idiomaActual = idioma;
 
-    document.documentElement.lang = idioma === "val" ? "ca" : "es";
+    const textos = translations[idioma];
 
 
-    /* Traducir textos */
+    /* Idioma del documento */
+
+    document.documentElement.lang =
+        idioma === "val" ? "ca" : "es";
+
+
+    /* Textos */
 
     document.querySelectorAll("[data-i18n]").forEach(elemento => {
 
-        const clave = elemento.getAttribute("data-i18n");
+        const clave = elemento.dataset.i18n;
 
-        if (translations[idioma][clave]) {
-            elemento.textContent = translations[idioma][clave];
+        if (textos[clave] !== undefined) {
+            elemento.textContent = textos[clave];
         }
 
     });
 
 
-    /* Traducir placeholders */
+    /* Placeholders */
 
     document.querySelectorAll("[data-i18n-placeholder]").forEach(elemento => {
 
-        const clave = elemento.getAttribute("data-i18n-placeholder");
+        const clave = elemento.dataset.i18nPlaceholder;
 
-        if (translations[idioma][clave]) {
-            elemento.placeholder = translations[idioma][clave];
+        if (textos[clave] !== undefined) {
+            elemento.placeholder = textos[clave];
         }
 
     });
 
 
-    /* Traducir textos ALT de imágenes */
+    /* Alt de imágenes */
 
     document.querySelectorAll("[data-i18n-alt]").forEach(elemento => {
 
-        const clave = elemento.getAttribute("data-i18n-alt");
+        const clave = elemento.dataset.i18nAlt;
 
-        if (translations[idioma][clave]) {
-            elemento.alt = translations[idioma][clave];
+        if (textos[clave] !== undefined) {
+            elemento.alt = textos[clave];
         }
 
     });
 
 
-    /* Cambiar estado visual de las banderas */
+    /* Botones de idioma */
 
-    document.querySelectorAll("[data-lang]").forEach(boton => {
+    document.querySelectorAll(".language-btn").forEach(boton => {
 
-        const img = boton.querySelector("img");
+        const activo = boton.dataset.lang === idioma;
 
-        if (!img) return;
+        boton.classList.toggle("active", activo);
 
-        if (boton.dataset.lang === idioma) {
-            img.classList.add("active-lang");
-        } else {
-            img.classList.remove("active-lang");
-        }
+        boton.setAttribute(
+            "aria-pressed",
+            activo ? "true" : "false"
+        );
 
     });
 
 
-    /* Guardar idioma seleccionado */
+    /* PDF */
+
+    actualizarPDF();
+
+
+    /* Contenido dinámico */
+
+    renderNoticias();
+    renderEventos();
+    renderGaleria();
+
+
+    /* Estado del menú */
+
+    actualizarTextoMenu();
+
+
+    /* Guardar preferencia */
 
     localStorage.setItem("afaIdioma", idioma);
 
+}
 
-    /* Cambiar PDF */
 
-    const visorPDF = document.querySelector(".visor-pdf");
-    const botonPDF = document.querySelector(".btn-descarga-pdf");
+/* =========================================================
+   PDF DE EXTRAESCOLARES
+========================================================= */
 
-    if (visorPDF && botonPDF) {
+function actualizarPDF() {
 
-        if (idioma === "val") {
+    const pdf =
+        siteConfig.pdfs[idiomaActual] ||
+        siteConfig.pdfs.es;
 
-            const pdfVal =
-                "pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf";
 
-            visorPDF.src = pdfVal;
+    const viewer =
+        document.getElementById("pdf-viewer");
 
-            botonPDF.href = pdfVal;
-            botonPDF.download =
-                "afa_extraescolares_2026-2027_VAL.pdf";
+    const download =
+        document.getElementById("pdf-download");
 
-        } else {
 
-            const pdfEs =
-                "pdf/actividades_extraescolares_afa_2026-2027_ES.pdf";
+    if (viewer) {
+        viewer.src = pdf;
+    }
 
-            visorPDF.src = pdfEs;
 
-            botonPDF.href = pdfEs;
-            botonPDF.download =
-                "afa_extraescolares_2026-2027_ES.pdf";
-
-        }
-
+    if (download) {
+        download.href = pdf;
     }
 
 }
 
 
 /* =========================================================
+   MENÚ MÓVIL
+========================================================= */
+
+const menuToggle =
+    document.getElementById("menu-toggle");
+
+const mainMenu =
+    document.getElementById("main-menu");
+
+
+function abrirCerrarMenu() {
+
+    if (!menuToggle || !mainMenu) {
+        return;
+    }
+
+
+    const abierto =
+        mainMenu.classList.toggle("open");
+
+
+    menuToggle.classList.toggle(
+        "active",
+        abierto
+    );
+
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        abierto ? "true" : "false"
+    );
+
+
+    actualizarTextoMenu();
+
+}
+
+
+function cerrarMenu() {
+
+    if (!menuToggle || !mainMenu) {
+        return;
+    }
+
+
+    mainMenu.classList.remove("open");
+
+    menuToggle.classList.remove("active");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+    );
+
+
+    actualizarTextoMenu();
+
+}
+
+
+function actualizarTextoMenu() {
+
+    if (!menuToggle) {
+        return;
+    }
+
+
+    const abierto =
+        menuToggle.getAttribute("aria-expanded") === "true";
+
+
+    const textos =
+        translations[idiomaActual];
+
+
+    menuToggle.setAttribute(
+        "aria-label",
+        abierto
+            ? textos.menuClose
+            : textos.menuOpen
+    );
+
+}
+
+
+if (menuToggle) {
+
+    menuToggle.addEventListener(
+        "click",
+        abrirCerrarMenu
+    );
+
+}
+
+
+/* Cerrar menú al seleccionar una sección */
+
+document.querySelectorAll(".main-nav a").forEach(enlace => {
+
+    enlace.addEventListener(
+        "click",
+        cerrarMenu
+    );
+
+});
+
+
+/* Cerrar menú con Escape */
+
+document.addEventListener(
+    "keydown",
+    evento => {
+
+        if (evento.key === "Escape") {
+            cerrarMenu();
+        }
+
+    }
+);
+
+
+/* =========================================================
    BOTONES DE IDIOMA
 ========================================================= */
 
-document.querySelectorAll("[data-lang]").forEach(boton => {
+document.querySelectorAll(".language-btn").forEach(boton => {
 
-    boton.addEventListener("click", function (e) {
+    boton.addEventListener(
+        "click",
+        () => {
 
-        e.preventDefault();
+            const idioma =
+                boton.dataset.lang;
 
-        const idioma = this.getAttribute("data-lang");
+            cambiarIdioma(idioma);
 
-        cambiarIdioma(idioma);
-
-    });
+        }
+    );
 
 });
 
 
 /* =========================================================
-   RECUPERAR IDIOMA GUARDADO
+   SCROLL SUAVE
 ========================================================= */
 
-const idiomaGuardado = localStorage.getItem("afaIdioma") || "es";
+document.querySelectorAll('a[href^="#"]').forEach(enlace => {
 
-cambiarIdioma(idiomaGuardado);
+    enlace.addEventListener(
+        "click",
+        evento => {
+
+            const destino =
+                enlace.getAttribute("href");
+
+
+            if (!destino || destino === "#") {
+                return;
+            }
+
+
+            const elemento =
+                document.querySelector(destino);
+
+
+            if (!elemento) {
+                return;
+            }
+
+
+            evento.preventDefault();
+
+
+            elemento.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+    );
+
+});
 
 
 /* =========================================================
-   NAVEGACIÓN SUAVE
+   AÑO AUTOMÁTICO DEL FOOTER
 ========================================================= */
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+const currentYear =
+    document.getElementById("current-year");
 
-    anchor.addEventListener("click", function (e) {
 
-        const destino = this.getAttribute("href");
+if (currentYear) {
 
-        /*
-         * Evitamos intentar buscar un elemento cuando el href
-         * sea simplemente "#".
-         */
+    currentYear.textContent =
+        new Date().getFullYear();
 
-        if (!destino || destino === "#") {
-            return;
-        }
+}
 
-        const elemento = document.querySelector(destino);
 
-        if (!elemento) {
-            return;
-        }
+/* =========================================================
+   NOTICIAS
+========================================================= */
 
-        e.preventDefault();
+function renderNoticias() {
 
-        elemento.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+    const container =
+        document.getElementById("news-list");
+
+
+    if (!container) {
+        return;
+    }
+
+
+    const textos =
+        translations[idiomaActual];
+
+
+    container.innerHTML = "";
+
+
+    const lista =
+        Array.isArray(window.noticias)
+            ? [...window.noticias]
+            : [];
+
+
+    /* Ordenar por fecha, más reciente primero */
+
+    lista.sort(
+        (a, b) =>
+            new Date(b.fecha) -
+            new Date(a.fecha)
+    );
+
+
+    /* Solo mostramos las 3 últimas en la portada */
+
+    const noticiasPortada =
+        lista.slice(0, 3);
+
+
+    if (noticiasPortada.length === 0) {
+
+        container.innerHTML = `
+            <div class="empty-state">
+
+                <div class="empty-state-icon">
+                    📢
+                </div>
+
+                <h3>
+                    ${textos.newsEmptyTitle}
+                </h3>
+
+                <p>
+                    ${textos.newsEmptyText}
+                </p>
+
+            </div>
+        `;
+
+        return;
+
+    }
+
+
+    noticiasPortada.forEach(noticia => {
+
+        const tarjeta =
+            crearTarjetaNoticia(
+                noticia,
+                textos
+            );
+
+
+        container.appendChild(tarjeta);
 
     });
 
-});
+}
+
+
+/* =========================================================
+   CREAR TARJETA DE NOTICIA
+========================================================= */
+
+function crearTarjetaNoticia(
+    noticia,
+    textos
+) {
+
+    const article =
+        document.createElement("article");
+
+
+    article.className =
+        "card news-card";
+
+
+    if (noticia.destacada) {
+        article.classList.add("featured");
+    }
+
+
+    const idiomaData =
+        noticia[idiomaActual] ||
+        noticia.es ||
+        {};
+
+
+    const categoria =
+        noticia.categoria?.[idiomaActual] ||
+        noticia.categoria?.es ||
+        "";
+
+
+    const fecha =
+        formatearFecha(
+            noticia.fecha,
+            idiomaActual
+        );
+
+
+    const imagen =
+        noticia.imagen || "";
+
+
+    const enlace =
+        noticia.enlace || "";
+
+
+    const imagenHTML =
+        imagen
+            ? `
+                <img
+                    class="news-card-image"
+                    src="${imagen}"
+                    alt="${escaparHTML(idiomaData.titulo || "")}"
+                    loading="lazy"
+                >
+            `
+            : "";
+
+
+    const destacadaHTML =
+        noticia.destacada
+            ? `
+                <span class="news-featured-badge">
+                    ${textos.newsFeatured}
+                </span>
+            `
+            : "";
+
+
+    const enlaceHTML =
+        enlace
+            ? `
+                <a
+                    class="text-link"
+                    href="${enlace}"
+                >
+                    ${textos.newsReadMore} →
+                </a>
+            `
+            : "";
+
+
+    article.innerHTML = `
+
+        ${imagenHTML}
+
+        <div class="news-card-content">
+
+            ${destacadaHTML}
+
+            <div class="news-card-meta">
+
+                <span>
+                    ${fecha}
+                </span>
+
+                ${
+                    categoria
+                        ? `
+                            <span class="news-category">
+                                ${escaparHTML(categoria)}
+                            </span>
+                        `
+                        : ""
+                }
+
+            </div>
+
+
+            <h3>
+                ${escaparHTML(idiomaData.titulo || "")}
+            </h3>
+
+
+            <p>
+                ${escaparHTML(idiomaData.texto || "")}
+            </p>
+
+
+            ${enlaceHTML}
+
+        </div>
+
+    `;
+
+
+    return article;
+
+}
+
+
+/* =========================================================
+   EVENTOS
+========================================================= */
+
+function renderEventos() {
+
+    const container =
+        document.getElementById("events-list");
+
+
+    if (!container) {
+        return;
+    }
+
+
+    const textos =
+        translations[idiomaActual];
+
+
+    container.innerHTML = "";
+
+
+    const lista =
+        Array.isArray(window.eventos)
+            ? [...window.eventos]
+            : [];
+
+
+    /* Ordenar por fecha */
+
+    lista.sort(
+        (a, b) =>
+            new Date(a.fecha) -
+            new Date(b.fecha)
+    );
+
+
+    if (lista.length === 0) {
+
+        container.innerHTML = `
+            <div class="empty-state">
+
+                <div class="empty-state-icon">
+                    📅
+                </div>
+
+                <h3>
+                    ${textos.eventsEmptyTitle}
+                </h3>
+
+                <p>
+                    ${textos.eventsEmptyText}
+                </p>
+
+            </div>
+        `;
+
+        return;
+
+    }
+
+
+    lista.forEach(evento => {
+
+        const tarjeta =
+            crearTarjetaEvento(
+                evento,
+                textos
+            );
+
+
+        container.appendChild(tarjeta);
+
+    });
+
+}
+
+
+/* =========================================================
+   CREAR TARJETA DE EVENTO
+========================================================= */
+
+function crearTarjetaEvento(
+    evento,
+    textos
+) {
+
+    const article =
+        document.createElement("article");
+
+
+    article.className =
+        "card event-card";
+
+
+    const idiomaData =
+        evento[idiomaActual] ||
+        evento.es ||
+        {};
+
+
+    const fecha =
+        evento.fecha
+            ? formatearFecha(
+                evento.fecha,
+                idiomaActual
+            )
+            : textos.eventNoDate;
+
+
+    const imagen =
+        evento.imagen || "";
+
+
+    const enlace =
+        evento.enlace || "";
+
+
+    const imagenHTML =
+        imagen
+            ? `
+                <img
+                    class="event-card-image"
+                    src="${imagen}"
+                    alt="${escaparHTML(idiomaData.titulo || "")}"
+                    loading="lazy"
+                >
+            `
+            : "";
+
+
+    const enlaceHTML =
+        enlace
+            ? `
+                <a
+                    class="text-link"
+                    href="${enlace}"
+                >
+                    ${textos.eventsMore} →
+                </a>
+            `
+            : "";
+
+
+    article.innerHTML = `
+
+        ${imagenHTML}
+
+        <div class="event-card-content">
+
+            <span class="event-date">
+                📅 ${fecha}
+            </span>
+
+
+            <h3>
+                ${escaparHTML(idiomaData.titulo || "")}
+            </h3>
+
+
+            <p>
+                ${escaparHTML(idiomaData.texto || "")}
+            </p>
+
+
+            ${enlaceHTML}
+
+        </div>
+
+    `;
+
+
+    return article;
+
+}
+
+
+/* =========================================================
+   GALERÍA
+========================================================= */
+
+function renderGaleria() {
+
+    const container =
+        document.getElementById("gallery-grid");
+
+
+    if (!container) {
+        return;
+    }
+
+
+    container.innerHTML = "";
+
+
+    const lista =
+        Array.isArray(window.galeria)
+            ? window.galeria
+            : [];
+
+
+    lista.forEach((imagen, indice) => {
+
+        const item =
+            document.createElement("button");
+
+
+        item.type = "button";
+
+        item.className =
+            "gallery-item";
+
+
+        const alt =
+            imagen.alt?.[idiomaActual] ||
+            imagen.alt?.es ||
+            "";
+
+
+        item.setAttribute(
+            "aria-label",
+            alt
+        );
+
+
+        item.innerHTML = `
+            <img
+                src="${imagen.imagen}"
+                alt="${escaparHTML(alt)}"
+                loading="lazy"
+            >
+        `;
+
+
+        item.addEventListener(
+            "click",
+            () => {
+
+                abrirGaleria(
+                    imagen,
+                    indice
+                );
+
+            }
+        );
+
+
+        container.appendChild(item);
+
+    });
+
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+const galleryModal =
+    document.getElementById("gallery-modal");
+
+const galleryModalImage =
+    document.getElementById("gallery-modal-image");
+
+const galleryModalTitle =
+    document.getElementById("gallery-modal-title");
+
+const galleryModalClose =
+    document.getElementById("gallery-modal-close");
+
+
+function abrirGaleria(
+    imagen
+) {
+
+    if (
+        !galleryModal ||
+        !galleryModalImage
+    ) {
+        return;
+    }
+
+
+    const alt =
+        imagen.alt?.[idiomaActual] ||
+        imagen.alt?.es ||
+        "";
+
+
+    galleryModalImage.src =
+        imagen.imagen;
+
+
+    galleryModalImage.alt =
+        alt;
+
+
+    if (galleryModalTitle) {
+
+        galleryModalTitle.textContent =
+            alt;
+
+    }
+
+
+    galleryModal.classList.add("active");
+
+    galleryModal.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+
+    document.body.style.overflow =
+        "hidden";
+
+
+    if (galleryModalClose) {
+        galleryModalClose.focus();
+    }
+
+}
+
+
+function cerrarGaleria() {
+
+    if (!galleryModal) {
+        return;
+    }
+
+
+    galleryModal.classList.remove(
+        "active"
+    );
+
+
+    galleryModal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+
+    document.body.style.overflow =
+        "";
+
+}
+
+
+if (galleryModalClose) {
+
+    galleryModalClose.addEventListener(
+        "click",
+        cerrarGaleria
+    );
+
+}
+
+
+if (galleryModal) {
+
+    galleryModal.addEventListener(
+        "click",
+        evento => {
+
+            if (
+                evento.target ===
+                galleryModal
+            ) {
+                cerrarGaleria();
+            }
+
+        }
+    );
+
+}
+
+
+/* Cerrar galería con Escape */
+
+document.addEventListener(
+    "keydown",
+    evento => {
+
+        if (
+            evento.key === "Escape" &&
+            galleryModal?.classList.contains("active")
+        ) {
+
+            cerrarGaleria();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   FORMULARIO DE CONTACTO
+========================================================= */
+
+const contactForm =
+    document.getElementById("contact-form");
+
+
+if (contactForm) {
+
+    contactForm.addEventListener(
+        "submit",
+        evento => {
+
+            evento.preventDefault();
+
+
+            const name =
+                document
+                    .getElementById("contact-name")
+                    ?.value
+                    .trim();
+
+
+            const email =
+                document
+                    .getElementById("contact-email")
+                    ?.value
+                    .trim();
+
+
+            const message =
+                document
+                    .getElementById("contact-message")
+                    ?.value
+                    .trim();
+
+
+            const status =
+                document.getElementById(
+                    "form-status"
+                );
+
+
+            const textos =
+                translations[idiomaActual];
+
+
+            if (
+                !name ||
+                !email ||
+                !message
+            ) {
+
+                if (status) {
+
+                    status.textContent =
+                        textos.formError;
+
+                }
+
+                return;
+
+            }
+
+
+            const subject =
+                encodeURIComponent(
+                    `Contacto web AFA - ${name}`
+                );
+
+
+            const body =
+                encodeURIComponent(
+                    `Nombre: ${name}\n` +
+                    `Email: ${email}\n\n` +
+                    `Mensaje:\n${message}`
+                );
+
+
+            const mailto =
+                `mailto:${siteConfig.email}` +
+                `?subject=${subject}` +
+                `&body=${body}`;
+
+
+            if (status) {
+
+                status.textContent =
+                    textos.formSuccess;
+
+            }
+
+
+            window.location.href =
+                mailto;
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   FECHA
+========================================================= */
+
+function formatearFecha(
+    fecha,
+    idioma
+) {
+
+    if (!fecha) {
+        return "";
+    }
+
+
+    const date =
+        new Date(`${fecha}T12:00:00`);
+
+
+    if (Number.isNaN(date.getTime())) {
+        return fecha;
+    }
+
+
+    return new Intl.DateTimeFormat(
+        idioma === "val"
+            ? "ca-ES"
+            : "es-ES",
+        {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        }
+    ).format(date);
+
+}
+
+
+/* =========================================================
+   ESCAPAR HTML
+   Evita insertar directamente contenido que pueda
+   interpretarse como HTML.
+========================================================= */
+
+function escaparHTML(texto) {
+
+    return String(texto)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+
+}
+
+
+/* =========================================================
+   DETECCIÓN DEL IDIOMA INICIAL
+========================================================= */
+
+function obtenerIdiomaInicial() {
+
+    const guardado =
+        localStorage.getItem("afaIdioma");
+
+
+    if (
+        guardado === "es" ||
+        guardado === "val"
+    ) {
+
+        return guardado;
+
+    }
+
+
+    /*
+       Si no hay idioma guardado, utilizamos
+       el idioma del navegador como referencia.
+    */
+
+    const navegador =
+        navigator.language
+            ?.toLowerCase() || "";
+
+
+    if (
+        navegador.startsWith("ca") ||
+        navegador.startsWith("val")
+    ) {
+
+        return "val";
+
+    }
+
+
+    return "es";
+
+}
+
+
+/* =========================================================
+   INICIALIZACIÓN
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        cambiarIdioma(
+            obtenerIdiomaInicial()
+        );
+
+    }
+);
