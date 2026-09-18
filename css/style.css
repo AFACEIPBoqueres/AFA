@@ -1,275 +1,510 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-color:#333;
+    font-family:'Poppins',sans-serif;
+    color:#333;
 }
 
 .container{
-width:90%;
-max-width:1200px;
-margin:auto;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
+
+/* =========================================================
+   CABECERA
+========================================================= */
+
 .header{
-position:fixed;
-top:0;
-width:100%;
-background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-z-index:1000;
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
 }
 
 .nav-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .logo img{
-height:60px;
+    height:60px;
 }
 
+.logo span{
+    font-weight:600;
+}
+
+
+/* =========================================================
+   MENÚ
+========================================================= */
+
 .menu{
-display:flex;
-list-style:none;
-gap:20px;
+    display:flex;
+    list-style:none;
+    gap:20px;
 }
 
 .menu a{
-text-decoration:none;
-color:#333;
-font-weight:500;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
 }
 
-.language-selector{ 
-display:
-flex;
-align-items:center;
-gap:10px;
+.menu a:hover{
+    color:#0099cc;
+}
+
+
+/* =========================================================
+   SELECTOR DE IDIOMA
+========================================================= */
+
+.language-selector{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.language-selector a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
 }
 
 .language-selector img{
-width:32px;
-height:32px;
-border-radius:50%;
-cursor:pointer;
-transition:.3s;
-box-shadow:0 2px 5px rgba(0,0,0,.2);
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+    opacity:.65;
 }
 
 .language-selector img:hover{
-transform:scale(1.1);
+    transform:scale(1.1);
+    opacity:1;
 }
 
+.language-selector img.active-lang{
+    opacity:1;
+    transform:scale(1.08);
+    box-shadow:0 0 0 3px #0099cc;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
 .hero{
-height:100vh;
-background:url('../img/hero.jpg') center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
+    height:100vh;
+    background:url('../img/hero.jpg') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .hero-overlay{
-background:rgba(255, 215, 0, .55);
-padding:50px;
-color:#000;
-text-align:center;
-border-radius:20px;
+    background:rgba(255, 215, 0, .55);
+    padding:50px;
+    color:#000;
+    text-align:center;
+    border-radius:20px;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:20px;
+    font-size:4rem;
+    margin-bottom:20px;
 }
 
+.hero p{
+    max-width:800px;
+    margin:0 auto;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
 .btn{
-display:inline-block;
-padding:15px 30px;
-background:#0099cc;
-color:white;
-text-decoration:none;
-border-radius:50px;
-margin:10px;
+    display:inline-block;
+    padding:15px 30px;
+    background:#0099cc;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    margin:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    opacity:.9;
 }
 
 .btn-secondary{
-background:#f4a100;
+    background:#f4a100;
 }
 
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
 .section{
-padding:100px 0;
+    padding:100px 0;
 }
 
 .section h2{
-text-align:center;
-margin-bottom:40px;
+    text-align:center;
+    margin-bottom:40px;
 }
 
 .bg-light{
-text-align:center; /*Modificado: añadida esta linea para centrar el texto*/
-background:#f7f9fc;
+    text-align:center;
+    background:#f7f9fc;
 }
 
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
+.card ul{
+    text-align:left;
+    padding-left:20px;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+
+/* =========================================================
+   GALERÍA
+========================================================= */
+
 .gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:15px;
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
 }
+
+.gallery img:hover{
+    transform:scale(1.02);
+}
+
+
+/* =========================================================
+   SOCIOS
+========================================================= */
 
 .socio{
-text-align:center;
-background:#0099cc;
-color:white;
+    text-align:center;
+    background:#0099cc;
+    color:white;
 }
 
+.socio ul{
+    display:inline-block;
+    text-align:left;
+    margin:15px auto;
+    padding-left:20px;
+}
+
+.socio li{
+    margin-bottom:8px;
+}
+
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+
 .contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
 }
 
 .contact-form{
-display:flex;
-flex-direction:column;
-gap:15px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 .contact-form input,
 .contact-form textarea{
-padding:12px;
-border:1px solid #ddd;
-border-radius:8px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-family:'Poppins',sans-serif;
+    font-size:15px;
+}
+
+.contact-form textarea{
+    resize:vertical;
 }
 
 .contact-form button{
-padding:15px;
-background:#0099cc;
-color:white;
-border:none;
-cursor:pointer;
+    padding:15px;
+    background:#0099cc;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+    font-family:'Poppins',sans-serif;
+    font-size:15px;
+    transition:.3s;
 }
+
+.contact-form button:hover{
+    opacity:.9;
+}
+
+
+/* =========================================================
+   MAPA
+========================================================= */
 
 .map iframe{
-width:100%;
-height:450px;
-border:0;
+    width:100%;
+    height:450px;
+    border:0;
 }
 
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
 footer{
-background:#222;
-color:white;
-text-align:center;
-padding:30px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
+
+
+/* =========================================================
+   VISOR PDF
+========================================================= */
+
+.pdf-completo-seccion{
+    width:100%;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    margin:40px 0;
+    padding:0;
+}
+
+.visor-pdf{
+    width:100%;
+    height:600px;
+    border:none;
+    background:#f7f9fc;
+}
+
+
+/* =========================================================
+   BOTÓN DESCARGA PDF
+========================================================= */
+
+.btn-descarga-pdf{
+    display:inline-block;
+    margin-top:20px;
+    background:#0099cc;
+    color:white !important;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:30px;
+    font-weight:600;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:transform .2s;
+}
+
+.btn-descarga-pdf:hover{
+    transform:scale(1.05);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media(max-width:992px){
 
-.nav-container{
-flex-direction:column;
-}
-
-.menu{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:2.5rem;
-}
-
-/*Apartados añadidos*/
-  
-/* Contenedor a pantalla completa */
-.pdf-completo-seccion {
-   /* width: 100vw;  */             /* Ocupa el 100% del ancho del navegador */
-   /*  left: 50%;*/
-  /*   right: 50%;*/
-  /*   margin-left: -50vw;*/
-  /*   margin-right: -50vw;    */    /* Rompe los márgenes del contenedor padre */
-  /*   position: relative;*/
-  /*   display: flex;*/
-  /*   flex-direction: column;*/
-  /*   align-items: center;*/
-  /*   margin-top: 40px;*/
-  /*   margin-bottom: 40px;*/
-    width: 100%;                /* Ocupa todo el ancho disponible de la pantalla */
-    display: flex !important;
-    flex-direction: column !important; /* Obliga a que el botón se ponga DEBAJO del iframe */
-    align-items: center !important;    /* Centra el botón horizontalmente */
-    margin: 40px 0;
-    padding: 0;
-}
-
-/* El visor del PDF adaptativo */
-.visor-pdf {
-    width: 100%;
-    height: 600px;              /* Altura ideal para leer en PC */
-    border: none;
-    background: #f7f9fc;
-}
-
-/* Botón de descarga debajo del PDF */
-.btn-descarga-pdf {
-    margin-top: 20px;
-    background: #0099cc;        /* El azul de tu web */
-    color: white !important;
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 30px;
-    font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s;
-}
-
-.btn-descarga-pdf:hover {
-    transform: scale(1.05);
-}
-
-/* Ajustes especiales para móviles */
-@media (max-width: 768px) {
-    .visor-pdf {
-        height: 450px;          /* Reducimos la altura en móviles para que sea más cómodo */
+    .nav-container{
+        flex-direction:column;
+        gap:10px;
     }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px 15px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero-overlay{
+        width:90%;
+        padding:35px 25px;
+    }
+
+    .visor-pdf{
+        height:600px;
+    }
+
 }
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media(max-width:768px){
+
+    .header{
+        position:relative;
+    }
+
+    .nav-container{
+        padding:10px 0 15px;
+    }
+
+    .logo img{
+        height:50px;
+    }
+
+    .logo span{
+        font-size:14px;
+    }
+
+    .menu{
+        gap:8px 12px;
+    }
+
+    .menu a{
+        font-size:13px;
+    }
+
+    .language-selector img{
+        width:30px;
+        height:30px;
+    }
+
+    .hero{
+        min-height:100vh;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .section{
+        padding:70px 0;
+    }
+
+    .visor-pdf{
+        height:450px;
+    }
+
 }
-  
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+========================================================= */
+
+@media(max-width:480px){
+
+    .logo{
+        flex-direction:column;
+        gap:5px;
+        text-align:center;
+    }
+
+    .menu{
+        gap:6px 10px;
+    }
+
+    .menu a{
+        font-size:12px;
+    }
+
+    .hero-overlay{
+        padding:30px 20px;
+    }
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .btn{
+        padding:12px 22px;
+        margin:5px;
+    }
+
+    .visor-pdf{
+        height:400px;
+    }
+
+}
