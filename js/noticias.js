@@ -12,16 +12,16 @@
 
 window.noticias = [
 
-    /*
+    
     {
-        fecha: "2026-09-20",
+        fecha: "2026-09-21",
 
         // true = aparece como noticia destacada
         // false = noticia normal
         destacada: true,
 
         // Ruta de la imagen
-        imagen: "img/noticias/nombre-de-la-imagen.jpg",
+        imagen: "img/noticias/noticia_web.jpg",
 
         // Categoría
         categoria: {
@@ -31,15 +31,15 @@ window.noticias = [
 
         // Texto en castellano
         es: {
-            titulo: "Título de la noticia",
-            texto: "Aquí escribimos un pequeño resumen de la noticia."
+            titulo: "¡Tenemos Web del AFA!",
+            texto: "Por primera vez hemos creado una web propia del AFA. En esta web mantendremos actualizada toda la información relacionada con AFA y la vida en el colegio."
         },
 
         // Texto en valenciano
         val: {
-            titulo: "Títol de la notícia",
-            texto: "Ací escrivim un xicotet resum de la notícia."
-        },
+            titulo: "Tenim Web de l'AFA!",
+            texto: "Per primera vegada hem creat una web pròpia del *AFA. En esta web mantindrem actualitzada tota la informació relacionada amb *AFA i la vida en el col·legi."
+        }
 
         // Opcional:
         // Si quieres que al pulsar la noticia vaya a una sección
@@ -47,6 +47,6 @@ window.noticias = [
         //
         // enlace: "#extraescolares"
     }
-    */
+    
 
 ];
