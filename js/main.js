@@ -149,21 +149,20 @@ const translations = {
             "Hazte socio y disfruta de las ventajas",
 
         /* Socios */
-        memberKicker: "Participa",
-        memberTitle: "Hazte socio del AFA",
-        memberPrice: "por familia y curso",
-        memberText:
-            "Formar parte del AFA permite colaborar en las actividades del colegio, participar en propuestas para las familias y disfrutar de las ventajas disponibles para socios.",
-        memberOption1Title:
-            "Ábaco Familias",
-        memberOption1Text:
-            "Puedes realizar el alta a través de la plataforma Ábaco Familias.",
-        memberOption2Title:
-            "En el colegio",
-        memberOption2Text:
-            "También puedes acercarte a nuestra oficina los viernes de 09:00 a 10:00.",
-        memberButton:
-            "Quiero hacerme socio",
+         memberKicker: "Participa",
+         memberTitle: "Hazte socio/a del AFA",
+         memberPrice: "por familia y curso",
+         memberText:"Formar parte del AFA permite colaborar en las actividades del colegio, participar en propuestas para las familias y disfrutar de las ventajas disponibles para socios.",
+         memberOption1Title: "Hazte socio/a desde Ábaco Familias",
+         memberOption1Text: "Puedes hacerte socio/a a través de la app Ábaco Familias. Desde la aplicación podrás realizar la inscripción y pagar la cuota anual de 22 € por familia.",
+         memberOption1Link: "📲 Descargar Ábaco Familias",
+         memberOption2Title: "¿Necesitas ayuda?",
+         memberOption2Text: "Si necesitas ayuda para realizar el proceso, puedes consultar nuestro vídeo explicativo.",
+         memberOption2Link: "🎥 Ver vídeo explicativo",
+         memberOption3Title: "También puedes venir al AFA",
+         memberOption3Text:  "Si prefieres hacerlo presencialmente, puedes venir a nuestra oficina los viernes de 9:00 a 10:15.",
+         memberDownloads:  "También puedes descargar Ábaco Familias directamente:",
+         memberButton:  "Quiero hacerme socio/a",
 
         /* Contacto */
         contactKicker: "Estamos aquí",
@@ -333,21 +332,20 @@ const translations = {
             "Fes-te soci i gaudeix dels avantatges",
 
         /* Socios */
-        memberKicker: "Participa",
-        memberTitle: "Fes-te soci de l'AFA",
-        memberPrice: "per família i curs",
-        memberText:
-            "Formar part de l'AFA permet col·laborar en les activitats del col·legi, participar en propostes per a les famílies i gaudir dels avantatges disponibles per als socis.",
-        memberOption1Title:
-            "Ábaco Familias",
-        memberOption1Text:
-            "Pots realitzar l'alta a través de la plataforma Ábaco Familias.",
-        memberOption2Title:
-            "Al col·legi",
-        memberOption2Text:
-            "També pots acostar-te a la nostra oficina els divendres de 09:00 a 10:00.",
-        memberButton:
-            "Vull fer-me soci",
+         memberKicker: "Participa",
+         memberTitle: "Fes-te soci/a de l'AFA",
+         memberPrice: "per família i curs",
+         memberText: "Formar part de l’AFA permet col·laborar en les activitats del col·legi, participar en propostes per a les famílies i gaudir dels avantatges disponibles per a les persones sòcies.",
+         memberOption1Title: "Fes-te soci/a des d’Ábaco Familias",
+         memberOption1Text: "Pots fer-te soci/a a través de l’app Ábaco Familias. Des de l’aplicació podràs fer la inscripció i pagar la quota anual de 22 € per família.",
+         memberOption1Link: "📲 Descarrega Ábaco Familias",
+         memberOption2Title: "Necessites ajuda?",
+         memberOption2Text: "Si necessites ajuda per a fer el procés, pots consultar el nostre vídeo explicatiu.",
+         memberOption2Link: "🎥 Veure vídeo explicatiu",
+         memberOption3Title: "També pots vindre a l’AFA",
+         memberOption3Text: "Si prefereixes fer-ho presencialment, pots vindre a la nostra oficina els divendres de 9:00 a 10:15.",
+         memberDownloads: "També pots descarregar Ábaco Familias directament:",
+         memberButton: "Vull fer-me soci/a",
 
         /* Contacto */
         contactKicker: "Estem ací",
