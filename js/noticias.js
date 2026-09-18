@@ -17,19 +17,22 @@ window.noticias = [
         fecha: "2026-09-21",
         destacada: true,
 
+        // Ruta de la imagen
+        imagen: "img/noticias/noticia_web.jpg",
+        
         categoria: {
             es: "AFA",
             val: "AFA"
         },
 
         es: {
-            titulo: "¡Ya tenemos web!",
-            texto: "El AFA CEIP Boqueres estrena su nueva página web. Un nuevo espacio creado para mantener informadas a las familias, compartir nuestras actividades y proyectos, y facilitar el contacto con el AFA."
+            titulo: "¡Tenemos Web del AFA!",
+            texto: "El AFA CEIP Boqueres estrena su nueva página web. Un nuevo espacio creado para mantener informadas a las familias sobre la vida en el colegio, compartir nuestras actividades y proyectos, y facilitar el contacto con el AFA."
         },
 
         val: {
-            titulo: "Ja tenim web!",
-            texto: "L'AFA CEIP Boqueres estrena la seua nova pàgina web. Un nou espai creat per a mantindre informades les famílies, compartir les nostres activitats i projectes, i facilitar el contacte amb l'AFA."
+            titulo: "Tenim Web de l'AFA!",
+            texto: "L'AFA CEIP Boqueres estrena la seua nova pàgina web. Un nou espai creat per a mantindre informades les famílies sobre la vida en el col·legi, compartir les nostres activitats i projectes, i facilitar el contacte amb l'AFA."
         }
     }
 
