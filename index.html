@@ -1,693 +1,1207 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>AFA CEIP Boqueres | Asociación de Familias del Alumnado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-      content="Web oficial del AFA CEIP Boqueres de Almassora. Actividades, proyectos, eventos, extraescolares y contacto.">
+    <title>AFA CEIP Boqueres | Asociación de Familias del Alumnado</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <meta
+        name="description"
+        content="Web oficial del AFA CEIP Boqueres. Información, actividades, extraescolares, eventos, descuentos y servicios para las familias."
+    >
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0099cc">
+
+    <link rel="icon" href="img/logo-afa.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="header">
+    <!-- =========================================================
+         CABECERA
+    ========================================================== -->
 
-    <div class="container nav-container">
+    <header class="header" id="header">
 
-        <div class="logo">
-            <img src="img/logo-afa.png" alt="Logo AFA">
-            <span data-i18n="logo">AFA CEIP BOQUERES</span>
-        </div>
+        <div class="container nav-container">
 
-        <nav>
-            <ul class="menu">
-
-                <li>
-                    <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="#afa" data-i18n="nav.afa">¿Qué es el AFA?</a>
-                </li>
-
-                <li>
-                    <a href="#ventajas" data-i18n="nav.ventajas">Ventajas</a>
-                </li>
-
-                <li>
-                    <a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a>
-                </li>
-
-                <li>
-                    <a href="#galeria" data-i18n="nav.galeria">Galería</a>
-                </li>
-
-                <li>
-                    <a href="#extraescolares" data-i18n="nav.extraescolares">
-                        Extraescolares
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#camisetas" data-i18n="nav.camisetas">
-                        Camisetas
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#socio" data-i18n="nav.socio">
-                        Hazte Socio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contacto" data-i18n="nav.contacto">
-                        Contacto
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-        <!-- Selector de idioma -->
-
-        <div class="language-selector">
-
-            <!-- Castellano -->
-
-            <a href="#" 
-               data-lang="es"
-               title="Castellano"
-               aria-label="Castellano">
+            <!-- Logo -->
+            <a href="#inicio" class="logo" aria-label="AFA CEIP Boqueres - Inicio">
 
                 <img
-                    src="img/es.png"
-                    alt="Castellano"
-                    class="active-lang">
+                    src="img/logo-afa.png"
+                    alt="Logo AFA CEIP Boqueres"
+                >
+
+                <span class="logo-text">
+                    AFA CEIP BOQUERES
+                </span>
+
             </a>
 
-            <!-- Valenciano -->
 
-            <a href="#"
-               data-lang="val"
-               title="Valencià"
-               aria-label="Valencià">
-
-                <img
-                    src="img/valencia.png"
-                    alt="Valencià">
-            </a>
-
-        </div>
-
-    </div>
-
-</header>
-
-
-<!-- =========================
-     INICIO
-========================= -->
-
-<section id="inicio" class="hero">
-
-    <div class="hero-overlay">
-
-        <h1 data-i18n="hero.titulo">
-            AFA CEIP BOQUERES
-        </h1>
-
-        <p data-i18n="hero.descripcion">
-            Construyendo juntos una mejor experiencia educativa
-            para nuestros hijos e hijas.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#socio"
-               class="btn"
-               data-i18n="hero.botonSocio">
-                Hazte Socio
-            </a>
-
-            <a href="#contacto"
-               class="btn btn-secondary"
-               data-i18n="hero.botonContacto">
-                Contactar
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     ¿QUÉ ES EL AFA?
-========================= -->
-
-<section id="afa" class="section">
-
-    <div class="container">
-
-        <h2 data-i18n="afa.titulo">
-            ¿Qué es el AFA?
-        </h2>
-
-        <p data-i18n="afa.parrafo1">
-            La Asociación de Familias del Alumnado del CEIP Boqueres
-            está formada por madres, padres y tutores comprometidos
-            con la mejora del centro educativo y el bienestar del
-            alumnado. Además, el AFA CEIP Boqueres forma parte de
-            FAMPA Castelló Penyagolosa (Federación de Asociaciones de
-            Padres y Madres de Alumnos de la provincia de Castellón).
-        </p>
-
-        <p data-i18n="afa.parrafo2">
-            Trabajamos junto al centro educativo para crear un entorno
-            más participativo, creativo y alegre.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     VENTAJAS
-========================= -->
-
-<section id="ventajas" class="section bg-light">
-
-    <div class="container">
-
-        <h2 data-i18n="ventajas.titulo">
-            Ventajas de ser socio
-        </h2>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3 data-i18n="ventajas.participacion.titulo">
-                    Participación
-                </h3>
-
-                <p data-i18n="ventajas.participacion.texto">
-                    Participa activamente en la vida escolar.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3 data-i18n="ventajas.descuentos.titulo">
-                    Descuentos
-                </h3>
-
-                <p data-i18n="ventajas.descuentos.texto">
-                    Actividades, cine y comercios colaboradores.
-                    (“L’oroneta”, “Babel”, “Laser Combat”,
-                    “Lo quiero bonito”, “Meraki by Carmi”.)
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3 data-i18n="ventajas.prioridad.titulo">
-                    Prioridad
-                </h3>
-
-                <p data-i18n="ventajas.prioridad.texto">
-                    Inscripción preferente en eventos y talleres.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3 data-i18n="ventajas.representacion.titulo">
-                    Representación
-                </h3>
-
-                <p data-i18n="ventajas.representacion.texto">
-                    Defendemos los intereses de las familias.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     PROYECTOS
-========================= -->
-
-<section id="proyectos" class="section">
-
-    <div class="container">
-
-        <h2 data-i18n="proyectos.titulo">
-            Proyectos y Logros
-        </h2>
-
-        <div class="container">
-
-            <div>
-
-                <p data-i18n="proyectos.intro">
-                    Desde el AFA se organiza:
-                </p>
-
-                <p data-i18n="proyectos.actividades">
-                    - Actividades extraescolares
-                    - Eventos y celebraciones
-                    - Proyectos y charlas
-                    - Colaboraciones -
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3 data-i18n="proyectos.eventos.titulo">
+            <!-- Botón menú móvil -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <!-- Navegación -->
+            <nav
+                class="main-nav"
+                id="main-menu"
+                aria-label="Navegación principal"
+            >
+
+                <a href="#inicio" data-i18n="navInicio">
+                    Inicio
+                </a>
+
+                <a href="#actualidad" data-i18n="navActualidad">
+                    Actualidad
+                </a>
+
+                <a href="#afa" data-i18n="navAfa">
+                    ¿Qué es el AFA?
+                </a>
+
+                <a href="#eventos" data-i18n="navEventos">
                     Eventos
-                </h3>
+                </a>
 
-                <ul>
+                <a href="#extraescolares" data-i18n="navExtraescolares">
+                    Extraescolares
+                </a>
 
-                    <li data-i18n="proyectos.eventos.halloween">
-                        Halloween
-                    </li>
+                <a href="#galeria" data-i18n="navGaleria">
+                    Galería
+                </a>
 
-                    <li data-i18n="proyectos.eventos.navidad">
-                        Navidad
-                    </li>
+                <a href="#camisetas" data-i18n="navCamisetas">
+                    Camisetas
+                </a>
 
-                    <li data-i18n="proyectos.eventos.reyes">
-                        Reyes Magos
-                    </li>
+                <a href="#descuentos" data-i18n="navDescuentos">
+                    Descuentos
+                </a>
 
-                    <li data-i18n="proyectos.eventos.carnaval">
-                        Carnaval
-                    </li>
+                <a href="#socio" data-i18n="navSocio">
+                    Hazte socio
+                </a>
 
-                    <li data-i18n="proyectos.eventos.finCurso">
-                        Fin de Curso
-                    </li>
+                <a href="#contacto" data-i18n="navContacto">
+                    Contacto
+                </a>
 
-                </ul>
+            </nav>
 
-            </div>
 
-
-            <div class="card">
-
-                <h3 data-i18n="proyectos.mejoras.titulo">
-                    Mejoras
-                </h3>
-
-                <ul>
-
-                    <li data-i18n="proyectos.mejoras.bancos">
-                        Restauración de bancos
-                    </li>
-
-                    <li data-i18n="proyectos.mejoras.pergola">
-                        Instalación de pérgola
-                    </li>
-
-                    <li data-i18n="proyectos.mejoras.charlas">
-                        Charlas para familias
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     GALERÍA
-========================= -->
-
-<section id="galeria" class="section bg-light">
-
-    <div class="container">
-
-        <h2 data-i18n="galeria.titulo">
-            Galería
-        </h2>
-
-        <div class="gallery">
-
-            <img src="img/0halloween.jpg"
-                 alt="Halloween"
-                 data-i18n-alt="galeria.halloween">
-
-            <img src="img/0navidad2.jpg"
-                 alt="Navidad"
-                 data-i18n-alt="galeria.navidad">
-
-            <img src="img/0navidad3.jpg"
-                 alt="Navidad"
-                 data-i18n-alt="galeria.navidad">
-
-            <img src="img/0navidad.jpg"
-                 alt="Navidad"
-                 data-i18n-alt="galeria.navidad">
-
-            <img src="img/0reyesmagos1.jpg"
-                 alt="Reyes Magos"
-                 data-i18n-alt="galeria.reyes">
-
-            <img src="img/0reyesmagos2.jpg"
-                 alt="Reyes Magos"
-                 data-i18n-alt="galeria.reyes">
-
-            <img src="img/0carnaval.jpg"
-                 alt="Carnaval"
-                 data-i18n-alt="galeria.carnaval">
-
-            <img src="img/0carrozapregon1.jpg"
-                 alt="Carroza del Pregón"
-                 data-i18n-alt="galeria.carroza">
-
-            <img src="img/0carrozapregon2.jpg"
-                 alt="Carroza del Pregón"
-                 data-i18n-alt="galeria.carroza">
-
-            <img src="img/0fiestafindecurso1.jpg"
-                 alt="Fiesta Fin de Curso"
-                 data-i18n-alt="galeria.finCurso">
-
-            <img src="img/0fiestafindecurso2.jpg"
-                 alt="Fiesta Fin de Curso"
-                 data-i18n-alt="galeria.finCurso">
-
-            <img src="img/0bancos1.jpg"
-                 alt="Bancos del patio"
-                 data-i18n-alt="galeria.bancos">
-
-            <img src="img/0bancos2.jpg"
-                 alt="Bancos del patio"
-                 data-i18n-alt="galeria.bancos">
-
-            <img src="img/0pergola.jpg"
-                 alt="Pérgola"
-                 data-i18n-alt="galeria.pergola">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     EXTRAESCOLARES
-========================= -->
-
-<section id="extraescolares" class="section bg-light">
-
-    <div class="container">
-
-        <h2 data-i18n="extraescolares.titulo">
-            Extraescolares
-        </h2>
-
-        <p data-i18n="extraescolares.descripcion">
-            Cada curso actualizamos la oferta de actividades
-            extraescolares en función de la demanda de las familias.
-        </p>
-
-
-        <!-- Visor del PDF -->
-
-        <div class="pdf-completo-seccion">
-
-            <iframe
-                src="pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf"
-                class="visor-pdf"
-                title="Actividades extraescolares">
-            </iframe>
-
-        </div>
-
-
-        <!-- Botón de descarga -->
-
-        <div class="container">
-
-            <a
-                href="pdf/actividades_extraescolares_afa_2026-2027_VAL.pdf"
-                download="afa_extraescolares_2026-2027_VAL.pdf"
-                class="btn-descarga-pdf"
-                data-i18n="extraescolares.descargar">
-                Descargar PDF
-            </a>
-
-        </div>
-
-
-        <div class="cards">
-
-            <div class="card"
-                 data-i18n="extraescolares.teatro">
-                Teatro
-            </div>
-
-            <div class="card"
-                 data-i18n="extraescolares.baile">
-                Baile Moderno
-            </div>
-
-            <div class="card"
-                 data-i18n="extraescolares.ritmica">
-                Gimnasia Rítmica
-            </div>
-
-            <div class="card"
-                 data-i18n="extraescolares.multideporte">
-                Multideporte
-            </div>
-
-            <div class="card"
-                 data-i18n="extraescolares.pelota">
-                Pelota Valenciana
-            </div>
-
-            <div class="card"
-                 data-i18n="extraescolares.ingles">
-                Inglés Vivencial
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CAMISETAS
-========================= -->
-
-<section id="camisetas" class="section bg-light">
-
-    <div class="container">
-
-        <h2 data-i18n="camisetas.titulo">
-            Camisetas AFA
-        </h2>
-
-        <p data-i18n="camisetas.descripcion">
-            Cada inicio de curso se realiza un pedido conjunto
-            de camisetas oficiales del colegio.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     HAZTE SOCIO
-========================= -->
-
-<section id="socio" class="section socio">
-
-    <div class="container">
-
-        <h2 data-i18n="socio.titulo">
-            Hazte Socio
-        </h2>
-
-        <p data-i18n="socio.cuota">
-            Cuota anual: 22€
-        </p>
-
-        <p data-i18n="socio.descripcion">
-            Participa en la vida del colegio y disfruta
-            de todas las ventajas del AFA.
-        </p>
-
-        <p data-i18n="socio.formasIntro">
-            ¡Ser socio o socia del AFA es muy fácil!
-            Existen varias formas para apuntarse:
-        </p>
-
-        <ul>
-
-            <li data-i18n="socio.abaco">
-                Inscribirse a través de la aplicación
-                ”Ábaco Familias”.
-            </li>
-
-            <li data-i18n="socio.presencial">
-                Acudir en persona a la oficina del AFA
-                (viernes de 9:00h a 10:00h).
-            </li>
-
-        </ul>
-
-
-        <a href="#contacto"
-           class="btn"
-           data-i18n="socio.boton">
-            Solicitar Información
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CONTACTO
-========================= -->
-
-<section id="contacto" class="section">
-
-    <div class="container">
-
-        <h2 data-i18n="contacto.titulo">
-            Contacto
-        </h2>
-
-        <div class="contact-grid">
-
-            <div>
-
-                <h3 data-i18n="contacto.informacion">
-                    Información
-                </h3>
-
-                <p>📞 633 714 580</p>
-
-                <p>✉️ afaceipboqueres@gmail.com</p>
-
-                <p data-i18n="contacto.horario">
-                    🕒 Viernes de 09:00 a 10:00
-                </p>
-
-            </div>
-
-
-            <form class="contact-form">
-
-                <input
-                    type="text"
-                    data-i18n-placeholder="contacto.nombre"
-                    placeholder="Nombre">
-
-                <input
-                    type="email"
-                    data-i18n-placeholder="contacto.email"
-                    placeholder="Email">
-
-                <textarea
-                    rows="5"
-                    data-i18n-placeholder="contacto.mensaje"
-                    placeholder="Mensaje"></textarea>
+            <!-- Selector de idioma -->
+            <div class="language-selector" aria-label="Selector de idioma">
 
                 <button
-                    type="submit"
-                    data-i18n="contacto.enviar">
-                    Enviar
+                    type="button"
+                    class="language-btn active"
+                    data-lang="es"
+                    aria-label="Español"
+                    title="Español"
+                >
+                    <img
+                        src="img/es.png"
+                        alt="Español"
+                    >
                 </button>
 
-            </form>
+                <button
+                    type="button"
+                    class="language-btn"
+                    data-lang="val"
+                    aria-label="Valencià"
+                    title="Valencià"
+                >
+                    <img
+                        src="img/valencia.png"
+                        alt="Valencià"
+                    >
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             INICIO / HERO
+        ====================================================== -->
+
+        <section
+            id="inicio"
+            class="hero"
+            aria-labelledby="hero-title"
+        >
+
+            <div class="hero-overlay">
+
+                <div class="container hero-content">
+
+                    <span class="hero-badge" data-i18n="heroBadge">
+                        AFA CEIP Boqueres
+                    </span>
+
+                    <h1 id="hero-title" data-i18n="heroTitle">
+                        Juntos hacemos comunidad
+                    </h1>
+
+                    <p data-i18n="heroDescription">
+                        Trabajamos para mejorar la experiencia escolar
+                        de nuestros hijos e hijas y crear una comunidad
+                        educativa más participativa.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#actualidad"
+                            class="btn btn-primary"
+                            data-i18n="heroNewsButton"
+                        >
+                            Ver actualidad
+                        </a>
+
+                        <a
+                            href="#extraescolares"
+                            class="btn btn-secondary"
+                            data-i18n="heroActivitiesButton"
+                        >
+                            Extraescolares
+                        </a>
+
+                        <a
+                            href="#socio"
+                            class="btn btn-outline"
+                            data-i18n="heroMemberButton"
+                        >
+                            Hazte socio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ACTUALIDAD
+        ====================================================== -->
+
+        <section
+            id="actualidad"
+            class="section bg-light"
+            aria-labelledby="actualidad-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="newsKicker">
+                        Actualidad
+                    </span>
+
+                    <h2 id="actualidad-title" data-i18n="newsTitle">
+                        Noticias y novedades
+                    </h2>
+
+                    <p data-i18n="newsIntro">
+                        Aquí encontrarás las últimas noticias,
+                        avisos y novedades del AFA.
+                    </p>
+
+                </div>
+
+
+                <!--
+                    Las noticias se cargarán automáticamente
+                    desde js/noticias.js
+                -->
+                <div
+                    id="news-list"
+                    class="content-grid news-grid"
+                    aria-live="polite"
+                ></div>
+
+
+                <div class="section-action">
+
+                    <a
+                        href="#actualidad"
+                        id="news-more-button"
+                        class="btn btn-primary hidden"
+                        data-i18n="newsMore"
+                    >
+                        Ver todas las noticias
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ¿QUÉ ES EL AFA?
+        ====================================================== -->
+
+        <section
+            id="afa"
+            class="section"
+            aria-labelledby="afa-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="afaKicker">
+                        Nuestra asociación
+                    </span>
+
+                    <h2 id="afa-title" data-i18n="afaTitle">
+                        ¿Qué es el AFA?
+                    </h2>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <div class="text-content">
+
+                        <p data-i18n="afaText1">
+                            El AFA CEIP Boqueres está formado por madres,
+                            padres y representantes legales del alumnado
+                            que colaboramos para mejorar la vida escolar
+                            y fortalecer la relación entre las familias,
+                            el centro educativo y la comunidad.
+                        </p>
+
+                        <p data-i18n="afaText2">
+                            Formamos parte de FAMPA Castelló Penyagolosa
+                            y trabajamos para representar los intereses
+                            de las familias, organizar actividades,
+                            colaborar con el colegio y crear espacios
+                            de participación.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="info-card-icon">
+                            🤝
+                        </div>
+
+                        <h3 data-i18n="afaCardTitle">
+                            Una asociación para todas las familias
+                        </h3>
+
+                        <p data-i18n="afaCardText">
+                            Tu participación ayuda a construir una
+                            comunidad educativa más cercana,
+                            participativa y activa.
+                        </p>
+
+                        <a
+                            href="#socio"
+                            class="text-link"
+                            data-i18n="afaCardButton"
+                        >
+                            Quiero participar →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EVENTOS
+        ====================================================== -->
+
+        <section
+            id="eventos"
+            class="section bg-light"
+            aria-labelledby="eventos-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="eventsKicker">
+                        Actividades
+                    </span>
+
+                    <h2 id="eventos-title" data-i18n="eventsTitle">
+                        Eventos
+                    </h2>
+
+                    <p data-i18n="eventsIntro">
+                        Consulta las próximas actividades y celebraciones
+                        organizadas por el AFA.
+                    </p>
+
+                </div>
+
+
+                <!--
+                    Los eventos se cargarán desde js/eventos.js
+                -->
+                <div
+                    id="events-list"
+                    class="content-grid events-grid"
+                    aria-live="polite"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EXTRAESCOLARES
+        ====================================================== -->
+
+        <section
+            id="extraescolares"
+            class="section"
+            aria-labelledby="extraescolares-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="extraKicker">
+                        Curso 2026-2027
+                    </span>
+
+                    <h2 id="extraescolares-title" data-i18n="extraTitle">
+                        Extraescolares
+                    </h2>
+
+                    <p data-i18n="extraIntro">
+                        Consulta todas las actividades extraescolares
+                        disponibles para este curso.
+                    </p>
+
+                </div>
+
+
+                <!-- Visor PDF -->
+
+                <div class="pdf-section">
+
+                    <div class="pdf-header">
+
+                        <div>
+                            <h3 data-i18n="extraPdfTitle">
+                                Información de extraescolares
+                            </h3>
+
+                            <p data-i18n="extraPdfDescription">
+                                Puedes consultar el documento completo
+                                o descargarlo para tenerlo siempre a mano.
+                            </p>
+                        </div>
+
+                        <a
+                            id="pdf-download"
+                            class="btn btn-primary"
+                            href="pdf/actividades_extraescolares_afa_2026-2027_ES.pdf"
+                            download
+                            data-i18n="extraPdfDownload"
+                        >
+                            Descargar PDF
+                        </a>
+
+                    </div>
+
+
+                    <div class="pdf-viewer-wrapper">
+
+                        <iframe
+                            id="pdf-viewer"
+                            src="pdf/actividades_extraescolares_afa_2026-2027_ES.pdf"
+                            title="Información de actividades extraescolares"
+                            loading="lazy"
+                        ></iframe>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Actividades -->
+
+                <div class="activities-grid">
+
+                    <article class="card activity-card">
+
+                        <div class="card-icon">
+                            🎭
+                        </div>
+
+                        <h3 data-i18n="activityTeatro">
+                            Teatro
+                        </h3>
+
+                        <p data-i18n="activityTeatroText">
+                            Actividad para desarrollar la expresión,
+                            creatividad y confianza.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card activity-card">
+
+                        <div class="card-icon">
+                            💃
+                        </div>
+
+                        <h3 data-i18n="activityBaile">
+                            Baile Moderno
+                        </h3>
+
+                        <p data-i18n="activityBaileText">
+                            Música, movimiento y diversión.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card activity-card">
+
+                        <div class="card-icon">
+                            🤸
+                        </div>
+
+                        <h3 data-i18n="activityGimnasia">
+                            Gimnasia Rítmica
+                        </h3>
+
+                        <p data-i18n="activityGimnasiaText">
+                            Coordinación, movimiento y actividad física.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card activity-card">
+
+                        <div class="card-icon">
+                            🏃
+                        </div>
+
+                        <h3 data-i18n="activityMultideporte">
+                            Multideporte
+                        </h3>
+
+                        <p data-i18n="activityMultideporteText">
+                            Diferentes deportes para aprender jugando.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card activity-card">
+
+                        <div class="card-icon">
+                            🏐
+                        </div>
+
+                        <h3 data-i18n="activityPelota">
+                            Pelota Valenciana
+                        </h3>
+
+                        <p data-i18n="activityPelotaText">
+                            Descubre y practica un deporte tradicional
+                            de nuestra tierra.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card activity-card">
+
+                        <div class="card-icon">
+                            🇬🇧
+                        </div>
+
+                        <h3 data-i18n="activityIngles">
+                            Inglés Vivencial
+                        </h3>
+
+                        <p data-i18n="activityInglesText">
+                            Aprendizaje del inglés mediante actividades
+                            prácticas y dinámicas.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GALERÍA
+        ====================================================== -->
+
+        <section
+            id="galeria"
+            class="section bg-light"
+            aria-labelledby="galeria-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="galleryKicker">
+                        Nuestro día a día
+                    </span>
+
+                    <h2 id="galeria-title" data-i18n="galleryTitle">
+                        Galería
+                    </h2>
+
+                    <p data-i18n="galleryIntro">
+                        Algunos momentos de las actividades y celebraciones
+                        compartidas por nuestra comunidad educativa.
+                    </p>
+
+                </div>
+
+
+                <!--
+                    Las imágenes se cargarán desde js/galeria.js
+                -->
+                <div
+                    id="gallery-grid"
+                    class="gallery"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CAMISETAS
+        ====================================================== -->
+
+        <section
+            id="camisetas"
+            class="section"
+            aria-labelledby="camisetas-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="shirtsKicker">
+                        Identidad del cole
+                    </span>
+
+                    <h2 id="camisetas-title" data-i18n="shirtsTitle">
+                        Camisetas
+                    </h2>
+
+                </div>
+
+
+                <div class="two-column shirts-section">
+
+                    <div class="shirt-visual" aria-hidden="true">
+                        <span>👕</span>
+                    </div>
+
+
+                    <div class="text-content">
+
+                        <h3 data-i18n="shirtsHeading">
+                            Camisetas oficiales del colegio
+                        </h3>
+
+                        <p data-i18n="shirtsText">
+                            Cada inicio de curso se realiza un pedido
+                            conjunto de camisetas oficiales del colegio.
+                        </p>
+
+                        <p data-i18n="shirtsMore">
+                            Cuando se abra el periodo de pedido,
+                            publicaremos toda la información en esta web
+                            y en nuestros canales habituales.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DESCUENTOS
+        ====================================================== -->
+
+        <section
+            id="descuentos"
+            class="section bg-light"
+            aria-labelledby="descuentos-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="discountKicker">
+                        Ventajas
+                    </span>
+
+                    <h2 id="descuentos-title" data-i18n="discountTitle">
+                        Descuentos para socios
+                    </h2>
+
+                    <p data-i18n="discountIntro">
+                        Las familias socias pueden disfrutar de descuentos
+                        y ventajas ofrecidas por diferentes establecimientos
+                        colaboradores.
+                    </p>
+
+                </div>
+
+
+                <div class="content-grid discount-grid">
+
+                    <article class="card discount-card">
+                        <h3>L'oroneta</h3>
+                    </article>
+
+                    <article class="card discount-card">
+                        <h3>Babel</h3>
+                    </article>
+
+                    <article class="card discount-card">
+                        <h3>Laser Combat</h3>
+                    </article>
+
+                    <article class="card discount-card">
+                        <h3>Lo quiero bonito</h3>
+                    </article>
+
+                    <article class="card discount-card">
+                        <h3>Meraki by Carmi</h3>
+                    </article>
+
+                </div>
+
+
+                <div class="section-action">
+
+                    <a
+                        href="#socio"
+                        class="btn btn-primary"
+                        data-i18n="discountButton"
+                    >
+                        Hazte socio y disfruta de las ventajas
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             HAZTE SOCIO
+        ====================================================== -->
+
+        <section
+            id="socio"
+            class="section socio-section"
+            aria-labelledby="socio-title"
+        >
+
+            <div class="container">
+
+                <div class="socio-content">
+
+                    <div class="section-heading">
+
+                        <span class="section-kicker" data-i18n="memberKicker">
+                            Participa
+                        </span>
+
+                        <h2 id="socio-title" data-i18n="memberTitle">
+                            Hazte socio del AFA
+                        </h2>
+
+                    </div>
+
+
+                    <div class="member-price">
+                        <span class="price">22 €</span>
+                        <span data-i18n="memberPrice">
+                            por familia y curso
+                        </span>
+                    </div>
+
+
+                    <p data-i18n="memberText">
+                        Formar parte del AFA permite colaborar en las
+                        actividades del colegio, participar en propuestas
+                        para las familias y disfrutar de las ventajas
+                        disponibles para socios.
+                    </p>
+
+
+                    <div class="member-options">
+
+                        <div class="member-option">
+
+                            <span class="member-option-icon">
+                                📱
+                            </span>
+
+                            <div>
+
+                                <h3 data-i18n="memberOption1Title">
+                                    Ábaco Familias
+                                </h3>
+
+                                <p data-i18n="memberOption1Text">
+                                    Puedes realizar el alta a través
+                                    de la plataforma Ábaco Familias.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="member-option">
+
+                            <span class="member-option-icon">
+                                🏫
+                            </span>
+
+                            <div>
+
+                                <h3 data-i18n="memberOption2Title">
+                                    En el colegio
+                                </h3>
+
+                                <p data-i18n="memberOption2Text">
+                                    También puedes acercarte a nuestra
+                                    oficina los viernes de 09:00 a 10:00.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="#contacto"
+                        class="btn btn-light"
+                        data-i18n="memberButton"
+                    >
+                        Quiero hacerme socio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACTO
+        ====================================================== -->
+
+        <section
+            id="contacto"
+            class="section"
+            aria-labelledby="contact-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker" data-i18n="contactKicker">
+                        Estamos aquí
+                    </span>
+
+                    <h2 id="contact-title" data-i18n="contactTitle">
+                        Contacto
+                    </h2>
+
+                    <p data-i18n="contactIntro">
+                        Si tienes alguna duda, propuesta o necesitas
+                        información, puedes contactar con nosotros.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <!-- Información -->
+
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                📞
+                            </div>
+
+                            <div>
+
+                                <h3 data-i18n="contactPhoneTitle">
+                                    Teléfono
+                                </h3>
+
+                                <a href="tel:+34633714580">
+                                    633 714 580
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                ✉️
+                            </div>
+
+                            <div>
+
+                                <h3 data-i18n="contactEmailTitle">
+                                    Correo electrónico
+                                </h3>
+
+                                <a href="mailto:afaceipboqueres@gmail.com">
+                                    afaceipboqueres@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                🕘
+                            </div>
+
+                            <div>
+
+                                <h3 data-i18n="contactHoursTitle">
+                                    Horario de atención
+                                </h3>
+
+                                <p data-i18n="contactHours">
+                                    Viernes de 09:00 a 10:00
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Formulario -->
+
+                    <div class="contact-form-wrapper">
+
+                        <form id="contact-form">
+
+                            <div class="form-group">
+
+                                <label
+                                    for="contact-name"
+                                    data-i18n="formName"
+                                >
+                                    Nombre
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contact-name"
+                                    name="name"
+                                    required
+                                    autocomplete="name"
+                                    data-i18n-placeholder="formNamePlaceholder"
+                                    placeholder="Tu nombre"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label
+                                    for="contact-email"
+                                    data-i18n="formEmail"
+                                >
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="contact-email"
+                                    name="email"
+                                    required
+                                    autocomplete="email"
+                                    data-i18n-placeholder="formEmailPlaceholder"
+                                    placeholder="tu@email.com"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label
+                                    for="contact-message"
+                                    data-i18n="formMessage"
+                                >
+                                    Mensaje
+                                </label>
+
+                                <textarea
+                                    id="contact-message"
+                                    name="message"
+                                    rows="6"
+                                    required
+                                    data-i18n-placeholder="formMessagePlaceholder"
+                                    placeholder="Escribe tu mensaje..."
+                                ></textarea>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                                data-i18n="formSubmit"
+                            >
+                                Enviar mensaje
+                            </button>
+
+
+                            <p
+                                id="form-status"
+                                class="form-status"
+                                aria-live="polite"
+                            ></p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Mapa -->
+
+                <div class="map-wrapper">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=CEIP+BOQUERES&output=embed"
+                        title="Ubicación del CEIP Boqueres"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         LIGHTBOX DE GALERÍA
+    ========================================================== -->
+
+    <div
+        id="gallery-modal"
+        class="gallery-modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="gallery-modal-title"
+    >
+
+        <button
+            type="button"
+            class="gallery-modal-close"
+            id="gallery-modal-close"
+            aria-label="Cerrar imagen"
+        >
+            &times;
+        </button>
+
+
+        <div class="gallery-modal-content">
+
+            <img
+                id="gallery-modal-image"
+                src=""
+                alt=""
+            >
+
+            <p
+                id="gallery-modal-title"
+                class="gallery-modal-caption"
+            ></p>
 
         </div>
 
     </div>
 
-</section>
+
+    <!-- =========================================================
+         PIE DE PÁGINA
+    ========================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h3>
+                    AFA CEIP Boqueres
+                </h3>
+
+                <p data-i18n="footerText">
+                    Asociación de Familias del Alumnado
+                </p>
+
+            </div>
 
 
-<!-- =========================
-     MAPA
-========================= -->
+            <div class="footer-links">
 
-<section class="map">
+                <a
+                    href="#inicio"
+                    data-i18n="footerHome"
+                >
+                    Inicio
+                </a>
 
-    <iframe
-        src="https://maps.google.com/maps?q=CEIP%20BOQUERES&t=&z=15&ie=UTF8&iwloc=&output=embed"
-        allowfullscreen
-        title="Ubicación CEIP Boqueres">
-    </iframe>
+                <a
+                    href="#socio"
+                    data-i18n="footerMember"
+                >
+                    Hazte socio
+                </a>
 
-</section>
+                <a
+                    href="#contacto"
+                    data-i18n="footerContact"
+                >
+                    Contacto
+                </a>
 
+            </div>
 
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    <div class="container">
-
-        <p data-i18n="footer.copyright">
-            © 2026 AFA CEIP Boqueres
-        </p>
-
-        <p data-i18n="footer.descripcion">
-            Asociación de Familias del Alumnado
-        </p>
-
-    </div>
-
-</footer>
+        </div>
 
 
-<script src="js/main.js"></script>
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year">2026</span>
+                AFA CEIP Boqueres
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         
+         IMPORTANTE:
+         Primero cargamos los datos de noticias, eventos y galería.
+         Después cargamos main.js.
+    ========================================================== -->
+
+    <script src="js/noticias.js"></script>
+    <script src="js/eventos.js"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
